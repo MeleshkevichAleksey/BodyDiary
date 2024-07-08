@@ -19,11 +19,11 @@ struct OnboardingUserDataView: View {
     @State
     private var userName: String = String()
     
-    @State
-    private var selectedGender: UserGender = .male
+    @FocusState
+    private var isFocused: Bool
     
     @State
-    private var selectedSegment = 0
+    private var selectedGender: UserGender = .male
     
     @State
     private var showErrorPopup: Bool = false
@@ -44,13 +44,11 @@ struct OnboardingUserDataView: View {
                         self.userName
                     }, set: { newValue in
                         self.userName = newValue
-                        
-                        guard UserNameValidator.validate(newValue) else {
-                            return
-                        }
                         saveUserData()
                     }))
                     .textFieldStyle(AppTextFieldStyle())
+                    .submitLabel(.done)
+                    .focused($isFocused)
                 }
                 
                 VStack(alignment: .leading) {
@@ -60,8 +58,8 @@ struct OnboardingUserDataView: View {
                         .truncationMode(.tail)
                 }
                 
-                SegmentedPicker(selectedIndex: $selectedSegment,
-                                data: UserGender.allCases.map { $0.rawValue.capitalized })
+                SegmentedPicker<UserGender>(selected: $selectedGender,
+                                            data: getGenderPickerItems())
             }
             .padding(.horizontal, 30)
             .padding(.vertical, 30)
@@ -69,6 +67,9 @@ struct OnboardingUserDataView: View {
             .clipShape(.buttonBorder)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .onTapGesture {
+            isFocused = false
+        }
         .popup(isPresented: $showErrorPopup, view: {
             Text("Error saving user occurred")
                 .font(interfaceService.fonts.body1)
@@ -78,9 +79,15 @@ struct OnboardingUserDataView: View {
                 .type(.toast)
                 .position(.top)
         })
+        .onChange(of: selectedGender, { oldValue, newValue in
+            saveUserData()
+        })
         .onAppear(perform: {
             loadUser()
             stepCompleted = UserNameValidator.validate(userName)
+        })
+        .onDisappear(perform: {
+            isFocused = false
         })
     }
     
@@ -104,6 +111,11 @@ struct OnboardingUserDataView: View {
             modelContext.insert(userEntity)
         }
         
+        guard UserValidator.validate(userEntity) else {
+            stepCompleted = false
+            return
+        }
+        
         do {
             try modelContext.save()
             stepCompleted = true
@@ -111,6 +123,11 @@ struct OnboardingUserDataView: View {
         catch {
             showErrorPopup = true
         }
+    }
+    
+    private func getGenderPickerItems() -> [SegmentedPickerItem<UserGender>] {
+        UserGender.allCases.map { SegmentedPickerItem(element: $0,
+                                                      title: $0.rawValue.capitalized) }
     }
 }
 

@@ -7,8 +7,8 @@ struct StartAppScreen: View {
     @StateObject
     private var initializeService = InitializeService()
     
-    @Inject
-    private var userService: UserService
+    @StateObject
+    private var userService: UserService = DependencyResolver.shared.resolve()
     
     @State
     private var showAppTabBarView = false
@@ -19,7 +19,8 @@ struct StartAppScreen: View {
                 if showAppTabBarView {
                     AppTabBarView()
                         .transition(.move(edge: .trailing).combined(with: .opacity))
-                } else {
+                }
+                else {
                     OnboardingView(viewModel: OnboardingViewModel())
                         .transition(.move(edge: .leading).combined(with: .opacity))
                 }

@@ -29,7 +29,6 @@ struct OnboardingTextPageView: View {
         .onAppear(perform: {
             stepCompleted = true
         })
-        .frame(maxWidth: .infinity)
     }
 }
 

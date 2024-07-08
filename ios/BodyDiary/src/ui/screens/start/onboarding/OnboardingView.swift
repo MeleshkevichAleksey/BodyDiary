@@ -66,6 +66,7 @@ struct OnboardingView: View {
             .padding(.horizontal, 16)
         }
         .background(interfaceService.colors.backgroundMain)
+        .ignoresSafeArea(.keyboard)
     }
 }
 

@@ -2,19 +2,19 @@ import SwiftUI
 import UserInterface
 import BodyDiaryKit
 
-struct SegmentedPicker: View {
+struct SegmentedPicker<Element: Hashable>: View {
     
     @StateObject
     private var interfaceService: UserInterfaceService = DependencyResolver.shared.resolve()
     
     @Binding
-    private var selectedIndex: Int
+    private var selected: Element
     
-    private let data: [String]
+    private let data: [SegmentedPickerItem<Element>]
     
-    init(selectedIndex: Binding<Int>,
-         data: [String]) {
-        self._selectedIndex = selectedIndex
+    init(selected: Binding<Element>,
+         data: [SegmentedPickerItem<Element>]) {
+        self._selected = selected
         self.data = data
     }
     
@@ -27,18 +27,20 @@ struct SegmentedPicker: View {
                     .padding(4)
                     .frame(width: geo.size.width / CGFloat(data.count))
                     .shadow(color: .black.opacity(0.1), radius: 2, x: 1, y: 1)
-                    .offset(x: geo.size.width / CGFloat(data.count) * CGFloat(selectedIndex), y: 0)
+                    .offset(x: geo.size.width / CGFloat(data.count) * CGFloat(data.firstIndex(where: {
+                        $0.element == selected
+                    }) ?? 0), y: 0)
             }
             .frame(height: 40)
             
             HStack(spacing: 0) {
-                ForEach((0..<data.count), id: \.self) { index in
+                ForEach(data, id: \.self) { pickerItem in
                     HStack(spacing: 6) {
-                        let color = selectedIndex == index ?
+                        let color = selected == pickerItem.element ?
                         interfaceService.colors.textAccentControl :
                         interfaceService.colors.textMain
                         
-                        Text(data[index])
+                        Text(pickerItem.title)
                             .foregroundStyle(color)
                             .font(interfaceService.fonts.body1)
                     }
@@ -47,7 +49,7 @@ struct SegmentedPicker: View {
                     .background(.gray.opacity(0.00001))
                     .onTapGesture {
                         withAnimation(.easeInOut(duration: 0.150)) {
-                            selectedIndex = index
+                            selected = pickerItem.element
                         }
                     }
                 }

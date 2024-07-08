@@ -23,6 +23,8 @@ struct ActionButtonStyle: ButtonStyle {
             .onChange(of: interfaceService.colors.palette) { oldValue, newValue in
                 isSelected = isSelected
             }
+            .scaleEffect(configuration.isPressed ? 1.2 : 1)
+            .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
     }
 }
 

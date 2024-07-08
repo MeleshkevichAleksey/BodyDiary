@@ -99,6 +99,8 @@
 		A6C11AD92C38BE0900980AC0 /* InterfaceSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C11AD82C38BE0900980AC0 /* InterfaceSelectionView.swift */; };
 		A6DBC2442BBB04E90024653E /* DailyRecordEntity+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DBC2432BBB04E90024653E /* DailyRecordEntity+Formatted.swift */; };
 		A6E732C42C2F43DE004F3CFC /* AppTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E732C32C2F43DE004F3CFC /* AppTextFieldStyle.swift */; };
+		A6ED87962C3ACDE600D02CB3 /* SegmentedPickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ED87952C3ACDE600D02CB3 /* SegmentedPickerItem.swift */; };
+		A6ED87992C3AD0E500D02CB3 /* UserValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ED87982C3AD0E500D02CB3 /* UserValidator.swift */; };
 		A6F19BFD2C30E25E00A3068D /* OnboardingInterfaceSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F19BFC2C30E25E00A3068D /* OnboardingInterfaceSelectionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -233,6 +235,8 @@
 		A6C11AD82C38BE0900980AC0 /* InterfaceSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceSelectionView.swift; sourceTree = "<group>"; };
 		A6DBC2432BBB04E90024653E /* DailyRecordEntity+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecordEntity+Formatted.swift"; sourceTree = "<group>"; };
 		A6E732C32C2F43DE004F3CFC /* AppTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextFieldStyle.swift; sourceTree = "<group>"; };
+		A6ED87952C3ACDE600D02CB3 /* SegmentedPickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPickerItem.swift; sourceTree = "<group>"; };
+		A6ED87982C3AD0E500D02CB3 /* UserValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserValidator.swift; sourceTree = "<group>"; };
 		A6F19BFC2C30E25E00A3068D /* OnboardingInterfaceSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInterfaceSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -607,7 +611,7 @@
 			isa = PBXGroup;
 			children = (
 				A66713C12C2B949900DA2A06 /* styles */,
-				A699E0122C34B6310037656D /* SegmentedPicker.swift */,
+				A6ED87942C3ACDC600D02CB3 /* segmentedPicker */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -633,7 +637,7 @@
 		A66713CE2C2CF51000DA2A06 /* validation */ = {
 			isa = PBXGroup;
 			children = (
-				A66713CF2C2CF52100DA2A06 /* UserNameValidator.swift */,
+				A6ED87972C3AD0DE00D02CB3 /* user */,
 			);
 			path = validation;
 			sourceTree = "<group>";
@@ -680,6 +684,24 @@
 				A6DBC2432BBB04E90024653E /* DailyRecordEntity+Formatted.swift */,
 			);
 			path = storage;
+			sourceTree = "<group>";
+		};
+		A6ED87942C3ACDC600D02CB3 /* segmentedPicker */ = {
+			isa = PBXGroup;
+			children = (
+				A699E0122C34B6310037656D /* SegmentedPicker.swift */,
+				A6ED87952C3ACDE600D02CB3 /* SegmentedPickerItem.swift */,
+			);
+			path = segmentedPicker;
+			sourceTree = "<group>";
+		};
+		A6ED87972C3AD0DE00D02CB3 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				A66713CF2C2CF52100DA2A06 /* UserNameValidator.swift */,
+				A6ED87982C3AD0E500D02CB3 /* UserValidator.swift */,
+			);
+			path = user;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -946,6 +968,7 @@
 				A66713B72C2B928500DA2A06 /* OnboardingTemplatePageView.swift in Sources */,
 				A65CF6E52C2A3176002D036A /* OnboardingPageItem.swift in Sources */,
 				A62137532C1F817C0054E13F /* DiaryUserLabelView.swift in Sources */,
+				A6ED87992C3AD0E500D02CB3 /* UserValidator.swift in Sources */,
 				A66713B12C2B861100DA2A06 /* UserService.swift in Sources */,
 				A65CF6EE2C2A35FE002D036A /* OnboardingTemplatePageItem.swift in Sources */,
 				A6E732C42C2F43DE004F3CFC /* AppTextFieldStyle.swift in Sources */,
@@ -968,6 +991,7 @@
 				A62A58DB2B951936009E953F /* BodyDiaryApp.swift in Sources */,
 				A621376E2C1F895B0054E13F /* ApplicationConfigurator.swift in Sources */,
 				A62137712C1F89BA0054E13F /* ServicesFactory.swift in Sources */,
+				A6ED87962C3ACDE600D02CB3 /* SegmentedPickerItem.swift in Sources */,
 				A64FA5E52C2103C200CC50C8 /* InitializeService.swift in Sources */,
 				A66713C02C2B93EE00DA2A06 /* ActionButtonStyle.swift in Sources */,
 			);

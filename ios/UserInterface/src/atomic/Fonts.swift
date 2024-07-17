@@ -14,4 +14,6 @@ public struct Fonts {
     public let body4 = Font.custom("PlusJakartaSans-SemiBold", size: 18)
     
     public let headline3 = Font.custom("PlusJakartaSans-Medium", size: 22)
+    
+    public let jostHeadline4 = Font.custom("Jost-Bold", size: 22)
 }

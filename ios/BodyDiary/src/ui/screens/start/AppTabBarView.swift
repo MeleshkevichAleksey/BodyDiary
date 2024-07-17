@@ -11,12 +11,12 @@ struct AppTabBarView: View {
         TabView {
             DiaryView()
                 .tabItem {
-                    Label("Diary", systemImage: "book")
+                    Label("TabBar.Diary.Title", systemImage: "book")
                 }
             
             SettingsView()
                 .tabItem {
-                    Label("Settings", systemImage: "gearshape")
+                    Label("TabBar.Settings.Title", systemImage: "gearshape")
                 }
         }
         .tint(interfaceService.colors.textAccent)
@@ -26,4 +26,5 @@ struct AppTabBarView: View {
 
 #Preview {
     AppTabBarView()
+        .preferredColorScheme(.dark)
 }

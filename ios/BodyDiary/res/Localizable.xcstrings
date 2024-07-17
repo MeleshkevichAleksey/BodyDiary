@@ -4,9 +4,6 @@
     "%@" : {
 
     },
-    "%@ Body Diary" : {
-
-    },
     "Activities" : {
 
     },
@@ -24,13 +21,21 @@
         }
       }
     },
+    "AvatarPicker.Title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select your avatar"
+          }
+        }
+      }
+    },
     "Calories" : {
 
     },
     "Date" : {
-
-    },
-    "Diary" : {
 
     },
     "Enter your data" : {
@@ -119,10 +124,51 @@
 
     },
     "Settings" : {
-
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "wqdqwd"
+          }
+        }
+      }
+    },
+    "Settings.User.Greetings %@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello %@!"
+          }
+        }
+      }
     },
     "Steps" : {
 
+    },
+    "TabBar.Diary.Title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diary"
+          }
+        }
+      }
+    },
+    "TabBar.Settings.Title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        }
+      }
     },
     "Unselected" : {
 

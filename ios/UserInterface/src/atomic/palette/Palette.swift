@@ -21,4 +21,8 @@ public protocol Palette {
     var groupControlColor: Color { get set }
     
     var groupControlInversed: Color { get set }
+    
+    var sectionBackground: Color { get set }
+    
+    var tintMain: Color { get set }
 }

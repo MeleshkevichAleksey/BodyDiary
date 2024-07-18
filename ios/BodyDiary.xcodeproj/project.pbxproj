@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A60218492C485EEB00D84732 /* SectionSegueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60218482C485EEB00D84732 /* SectionSegueView.swift */; };
 		A614A0542B9555860058F72D /* UserInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = A614A0532B9555860058F72D /* UserInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A614A0572B9555860058F72D /* UserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A614A0512B9555860058F72D /* UserInterface.framework */; };
 		A614A0582B9555860058F72D /* UserInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A614A0512B9555860058F72D /* UserInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -147,6 +148,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A60218482C485EEB00D84732 /* SectionSegueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSegueView.swift; sourceTree = "<group>"; };
 		A614A0512B9555860058F72D /* UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A614A0532B9555860058F72D /* UserInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInterface.h; sourceTree = "<group>"; };
 		A621374E2C1F77A60054E13F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -281,6 +283,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A60218472C485E2000D84732 /* sectionSegue */ = {
+			isa = PBXGroup;
+			children = (
+				A60218482C485EEB00D84732 /* SectionSegueView.swift */,
+			);
+			path = sectionSegue;
+			sourceTree = "<group>";
+		};
+		A602184C2C486C8600D84732 /* design */ = {
+			isa = PBXGroup;
+			children = (
+				A60218472C485E2000D84732 /* sectionSegue */,
+				A66713C12C2B949900DA2A06 /* styles */,
+				A6ED87942C3ACDC600D02CB3 /* segmentedPicker */,
+			);
+			path = design;
+			sourceTree = "<group>";
+		};
+		A602184D2C486C9100D84732 /* supplement */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = supplement;
+			sourceTree = "<group>";
+		};
 		A614A0522B9555860058F72D /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
@@ -605,8 +632,8 @@
 		A66713BE2C2B93CB00DA2A06 /* components */ = {
 			isa = PBXGroup;
 			children = (
-				A66713C12C2B949900DA2A06 /* styles */,
-				A6ED87942C3ACDC600D02CB3 /* segmentedPicker */,
+				A602184D2C486C9100D84732 /* supplement */,
+				A602184C2C486C8600D84732 /* design */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -1038,6 +1065,7 @@
 				A62A58DB2B951936009E953F /* BodyDiaryApp.swift in Sources */,
 				A621376E2C1F895B0054E13F /* ApplicationConfigurator.swift in Sources */,
 				A62137712C1F89BA0054E13F /* ServicesFactory.swift in Sources */,
+				A60218492C485EEB00D84732 /* SectionSegueView.swift in Sources */,
 				A6ED87962C3ACDE600D02CB3 /* SegmentedPickerItem.swift in Sources */,
 				A64FA5E52C2103C200CC50C8 /* InitializeService.swift in Sources */,
 				A66713C02C2B93EE00DA2A06 /* ActionButtonStyle.swift in Sources */,

@@ -29,4 +29,8 @@ public class QueenPalette: Palette {
     public var groupControlColor: Color = bundleColor("RaisinBlack")
     
     public var groupControlInversed: Color = bundleColor("CottonSeed")
+    
+    public var sectionBackground: Color = bundleColor("OuterSpace")
+    
+    public var tintMain: Color = bundleColor("CottonSeed")
 }

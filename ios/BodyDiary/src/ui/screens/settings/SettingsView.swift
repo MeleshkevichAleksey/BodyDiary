@@ -22,8 +22,8 @@ struct SettingsView: View {
     private var userName: String = String()
     
     var body: some View {
-        VStack {
-            HStack {
+        VStack(alignment: .leading) {
+            HStack(spacing: 16) {
                 UserAvatarView()
                 
                 Text("Settings.User.Greetings \(userName)")
@@ -32,10 +32,30 @@ struct SettingsView: View {
                 
                 Spacer()
             }
-            .padding(.leading, 40)
+            .padding(.vertical, 28)
+            
+            HStack {
+                VStack(alignment: .leading, spacing: 28) {
+                    SectionSegueView(image: Image(systemName: "person.fill"),
+                                     title: "Settings.PersonalData.Title")
+                    
+                    SectionSegueView(image: Image(systemName: "paintpalette.fill"),
+                                     title: "Settings.Appearance.Title")
+                    
+                    SectionSegueView(image: Image(systemName: "questionmark.circle.fill"),
+                                     title: "Settings.Help.Title")
+                }
+                
+                Spacer()
+            }
+            .padding(.vertical, 20)
+            .padding(.leading, 20)
+            .background(interfaceService.colors.sectionBackground)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
             
             Spacer()
         }
+        .padding(.horizontal, 46)
         .background(interfaceService.colors.backgroundMain)
         .onAppear(perform: {
             bindUser()

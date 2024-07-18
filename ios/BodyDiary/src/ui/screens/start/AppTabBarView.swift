@@ -9,15 +9,19 @@ struct AppTabBarView: View {
     
     var body: some View {
         TabView {
-            DiaryView()
-                .tabItem {
-                    Label("TabBar.Diary.Title", systemImage: "book")
-                }
+            NavigationStack {
+                DiaryView()
+            }
+            .tabItem {
+                Label("TabBar.Diary.Title", systemImage: "book")
+            }
             
-            SettingsView()
-                .tabItem {
-                    Label("TabBar.Settings.Title", systemImage: "gearshape")
-                }
+            NavigationStack {
+                SettingsView()
+            }
+            .tabItem {
+                Label("TabBar.Settings.Title", systemImage: "gearshape")
+            }
         }
         .tint(interfaceService.colors.textAccent)
         .background(interfaceService.colors.backgroundMain)

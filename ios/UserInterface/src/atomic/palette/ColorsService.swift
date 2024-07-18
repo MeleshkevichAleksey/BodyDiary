@@ -60,6 +60,12 @@ public class ColorsService: ObservableObject, Palette, Equatable {
     @Published
     public var groupControlInversed: Color = .clear
     
+    @Published
+    public var sectionBackground: Color = .clear
+    
+    @Published
+    public var tintMain: Color = .clear
+    
     private func setPalette(_ type: PaletteType) {
         self.storedPalette = type
         self.palette = type
@@ -83,5 +89,7 @@ public class ColorsService: ObservableObject, Palette, Equatable {
         self.groupColor = newPalette.groupColor
         self.groupControlColor = newPalette.groupControlColor
         self.groupControlInversed = newPalette.groupControlInversed
+        self.sectionBackground = newPalette.sectionBackground
+        self.tintMain = newPalette.tintMain
     }
 }

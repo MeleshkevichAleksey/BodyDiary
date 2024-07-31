@@ -6,13 +6,20 @@ import UserInterface
  
  - Modules setup
  */
-class ApplicationConfigurator {
+class AppConfigurator {
+    
+    private let appearenceConfigurator: AppAppearenceConfigurator
+    
+    init() {
+        self.appearenceConfigurator = AppAppearenceConfigurator()
+    }
     
     /**
      Performs configuration.
      */
     func setup() {
         setupKit()
+        appearenceConfigurator.configure()
     }
     
     private func setupKit() {

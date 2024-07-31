@@ -1,6 +1,9 @@
 import Combine
 import Foundation
 
+/**
+ Performs app services setup.
+ */
 class InitializeService: ObservableObject {
     
     @Published

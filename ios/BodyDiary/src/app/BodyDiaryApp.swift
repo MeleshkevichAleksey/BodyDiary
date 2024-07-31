@@ -21,7 +21,7 @@ struct BodyDiaryApp: App {
     }()
     
     init() {
-        ApplicationConfigurator().setup()
+        AppConfigurator().setup()
         
         self.forceDarkMode = true
     }

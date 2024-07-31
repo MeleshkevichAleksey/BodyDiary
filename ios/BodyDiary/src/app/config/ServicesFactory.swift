@@ -18,10 +18,13 @@ class ServicesFactory {
         
         let logger = Logger()
         
+        let configurationProvider = AppConfigurationProvider()
+        
         let services: [AnyObject] = [
             userInterfaceService,
             userService,
-            logger
+            logger,
+            configurationProvider
         ]
         
         return services

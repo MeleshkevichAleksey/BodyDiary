@@ -10,6 +10,9 @@ struct StartAppScreen: View {
     @StateObject
     private var userService: UserService = DependencyResolver.shared.resolve()
     
+    @Inject
+    private var appConfigurationProvider: AppConfigurationProvider
+    
     @State
     private var showAppTabBarView = false
     

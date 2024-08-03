@@ -37,6 +37,9 @@ public class ColorsService: ObservableObject, Palette, Equatable {
     public var textMain: Color = .clear
     
     @Published
+    public var controlMid: Color = .clear
+    
+    @Published
     public var textAccentControl: Color = .clear
     
     @Published
@@ -81,6 +84,7 @@ public class ColorsService: ObservableObject, Palette, Equatable {
         
         self.textAccent = newPalette.textAccent
         self.textMain = newPalette.textMain
+        self.controlMid = newPalette.controlMid
         self.textAccentControl = newPalette.textAccentControl
         self.backgroundMain = newPalette.backgroundMain
         self.controlBackgroundAccent = newPalette.controlBackgroundAccent

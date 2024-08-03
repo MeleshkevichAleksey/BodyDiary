@@ -14,6 +14,8 @@ public class QueenPalette: Palette {
     
     public var textMain: Color = bundleColor("CottonSeed")
     
+    public var controlMid: Color = bundleColor("MidGrey")
+    
     public var textAccentControl: Color = bundleColor("OuterSpace")
     
     public var backgroundMain: Color = bundleColor("BackgroundMain")

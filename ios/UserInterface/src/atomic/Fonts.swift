@@ -9,6 +9,8 @@ public struct Fonts {
     
     public let body1 = Font.custom("PlusJakartaSans-Regular", size: 14)
     
+    public let body1Medium = Font.custom("PlusJakartaSans-Medium", size: 14)
+    
     public let body2 = Font.custom("PlusJakartaSans-Regular", size: 16)
     
     public let body2semi = Font.custom("PlusJakartaSans-SemiBold", size: 16)

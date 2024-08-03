@@ -11,18 +11,19 @@ struct NotionButton: View {
     private var interfaceService: UserInterfaceService = DependencyResolver.shared.resolve()
     
     var body: some View {
-        Image(systemName: "plus")
-            .resizable()
-            .padding(15)
+        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Image(systemName: "plus")
+                .scaleEffect(CGSize(width: 3, height: 3))
+                .padding(23)
+        })
             .foregroundStyle(interfaceService.colors.controlBackgroundAccent)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(interfaceService.colors.sectionBackground)
+            .background(interfaceService.colors.groupColor.opacity(TabBarConstants.opacity))
             .clipShape(Circle())
     }
 }
 
 #Preview {
-    NotionButton()
-        .frame(width: 60, height: 60)
+    AppTabBarView()
         .preferredColorScheme(.dark)
 }

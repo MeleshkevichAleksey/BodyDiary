@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct TabBarShapeItem {
+struct TabBarButtonItem {
     
     let image: String
     

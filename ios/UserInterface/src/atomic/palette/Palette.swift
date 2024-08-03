@@ -6,6 +6,8 @@ public protocol Palette {
     
     var textMain: Color { get set }
     
+    var controlMid: Color { get set }
+    
     var textAccentControl: Color { get set }
     
     var backgroundMain: Color { get set }

@@ -45,18 +45,41 @@ struct AppTabBarView: View {
             }
             
             VStack(spacing: -35) {
-                NotionButton()
-                    .frame(height: 70)
+                if selectedTab == .diary {
+                    NotionButton()
+                        .frame(height: 70)
+                        .transition(
+                            AnyTransition.asymmetric(
+                                insertion: .offset(y: -20)
+                                    .combined(with: .scale(scale: 0.8))
+                                    .combined(with: .opacity)
+                                    .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0)),
+                                removal: .offset(y: 20)
+                                    .combined(with: .scale(scale: 0.8))
+                                    .combined(with: .opacity)
+                                    .animation(.spring(response: 0.2, dampingFraction: 0.6, blendDuration: 0))
+                            )
+                        )
+                        .animation(.spring(), value: selectedTab)
+                }
                 
-                HStack {
-                    ForEach(tabs, id: \.self) { image in
-                        
+                HStack() {
+                    ForEach(tabs, id: \.self) { tab in
+                        Spacer()
+                        TabBarButton(isSelected: .constant(selectedTab == tab),
+                                     item: TabBarButtonItemProvider().provideItem(for: tab))
+                        .onTapGesture {
+                            withAnimation {
+                                selectedTab = tab
+                            }
+                        }
+                        Spacer()
                     }
                 }
                 .frame(maxWidth: .infinity)
                 .frame(height: 70)
-                .background(interfaceService.colors.groupColor.opacity(0.7))
-                .clipShape(TabBarShape(addNotionButtonArc: true))
+                .background(interfaceService.colors.groupColor.opacity(TabBarConstants.opacity))
+                .clipShape(TabBarShape(addNotionButtonArc: (selectedTab == .diary)))
                 .padding(.horizontal, 30)
             }
         }

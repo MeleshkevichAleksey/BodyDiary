@@ -24,8 +24,7 @@
 		A62137732C1F89F20054E13F /* UserInterfaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62137722C1F89F20054E13F /* UserInterfaceService.swift */; };
 		A62137752C1F8A1E0054E13F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62137742C1F8A1E0054E13F /* Fonts.swift */; };
 		A62137772C1F8A350054E13F /* ColorsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62137762C1F8A350054E13F /* ColorsService.swift */; };
-		A621377A2C1F8EE10054E13F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62137792C1F8EE10054E13F /* Color.swift */; };
-		A621377E2C1F92D20054E13F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A621377D2C1F92D20054E13F /* Colors.xcassets */; };
+		A621377A2C1F8EE10054E13F /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62137792C1F8EE10054E13F /* Color+Ext.swift */; };
 		A62A58DB2B951936009E953F /* BodyDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A58DA2B951936009E953F /* BodyDiaryApp.swift */; };
 		A62A58DD2B951936009E953F /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A58DC2B951936009E953F /* DiaryView.swift */; };
 		A62A58E12B951937009E953F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A62A58E02B951937009E953F /* Assets.xcassets */; };
@@ -37,6 +36,7 @@
 		A62A59022B951DA5009E953F /* DiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A59012B951DA5009E953F /* DiaryViewModel.swift */; };
 		A63D70912C27256C00E96F03 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A63D70902C27256C00E96F03 /* Lottie */; };
 		A63D70962C2788B500E96F03 /* UserDefaultsPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D70952C2788B500E96F03 /* UserDefaultsPropertyWrapper.swift */; };
+		A63F7BAA2C603032009198F3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F7BA92C603032009198F3 /* Colors.swift */; };
 		A645F04E2C5ADF9B00880B4C /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645F04D2C5ADF9B00880B4C /* AppConfiguration.swift */; };
 		A645F0502C5AE03100880B4C /* AppConfigurationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645F04F2C5AE03100880B4C /* AppConfigurationProvider.swift */; };
 		A645F0532C5AF09400880B4C /* AppFatalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645F0522C5AF09400880B4C /* AppFatalError.swift */; };
@@ -175,8 +175,7 @@
 		A62137722C1F89F20054E13F /* UserInterfaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterfaceService.swift; sourceTree = "<group>"; };
 		A62137742C1F8A1E0054E13F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		A62137762C1F8A350054E13F /* ColorsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsService.swift; sourceTree = "<group>"; };
-		A62137792C1F8EE10054E13F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		A621377D2C1F92D20054E13F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A62137792C1F8EE10054E13F /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		A62A58D72B951936009E953F /* BodyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62A58DA2B951936009E953F /* BodyDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyDiaryApp.swift; sourceTree = "<group>"; };
 		A62A58DC2B951936009E953F /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
@@ -189,6 +188,7 @@
 		A62A58FD2B951B7B009E953F /* DailyRecordEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRecordEntity.swift; sourceTree = "<group>"; };
 		A62A59012B951DA5009E953F /* DiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewModel.swift; sourceTree = "<group>"; };
 		A63D70952C2788B500E96F03 /* UserDefaultsPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsPropertyWrapper.swift; sourceTree = "<group>"; };
+		A63F7BA92C603032009198F3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A645F04D2C5ADF9B00880B4C /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		A645F04F2C5AE03100880B4C /* AppConfigurationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurationProvider.swift; sourceTree = "<group>"; };
 		A645F0522C5AF09400880B4C /* AppFatalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFatalError.swift; sourceTree = "<group>"; };
@@ -377,7 +377,7 @@
 		A62137782C1F8ED50054E13F /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A62137792C1F8EE10054E13F /* Color.swift */,
+				A62137792C1F8EE10054E13F /* Color+Ext.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -393,7 +393,6 @@
 		A621377C2C1F92BE0054E13F /* res */ = {
 			isa = PBXGroup;
 			children = (
-				A621377D2C1F92D20054E13F /* Colors.xcassets */,
 			);
 			path = res;
 			sourceTree = "<group>";
@@ -487,6 +486,15 @@
 				A63D70952C2788B500E96F03 /* UserDefaultsPropertyWrapper.swift */,
 			);
 			path = userDefaultWrapper;
+			sourceTree = "<group>";
+		};
+		A63F7BA82C603011009198F3 /* colors */ = {
+			isa = PBXGroup;
+			children = (
+				A64EA24E2C31ADB10094FB9F /* palette */,
+				A63F7BA92C603032009198F3 /* Colors.swift */,
+			);
+			path = colors;
 			sourceTree = "<group>";
 		};
 		A645F0512C5AE0FA00880B4C /* provider */ = {
@@ -628,7 +636,7 @@
 			children = (
 				A62137722C1F89F20054E13F /* UserInterfaceService.swift */,
 				A62137742C1F8A1E0054E13F /* Fonts.swift */,
-				A64EA24E2C31ADB10094FB9F /* palette */,
+				A63F7BA82C603011009198F3 /* colors */,
 				A62137782C1F8ED50054E13F /* extensions */,
 			);
 			path = atomic;
@@ -1018,7 +1026,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A621377E2C1F92D20054E13F /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1088,7 +1095,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A62137752C1F8A1E0054E13F /* Fonts.swift in Sources */,
-				A621377A2C1F8EE10054E13F /* Color.swift in Sources */,
+				A63F7BAA2C603032009198F3 /* Colors.swift in Sources */,
+				A621377A2C1F8EE10054E13F /* Color+Ext.swift in Sources */,
 				A64EA2562C31C43B0094FB9F /* QueenPalette.swift in Sources */,
 				A64EA2502C31ADD80094FB9F /* PaletteType.swift in Sources */,
 				A64EA2522C31C3480094FB9F /* Palette.swift in Sources */,

@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 public extension Color {
     
@@ -37,25 +38,14 @@ public extension Color {
                   blue: CGFloat(blue) / 255.0,
                   opacity: 1.0)
     }
-    
-    init(hex: Int) {
-        self.init(
-            red: (hex >> 16) & 0xFF,
-            green: (hex >> 8) & 0xFF,
-            blue: hex & 0xFF
+    init(rgb: Int) {
+        self.init(red: (rgb >> 16) & 0xFF,
+                  green: (rgb >> 8) & 0xFF,
+                  blue: rgb & 0xFF
         )
     }
     
     var uiColor: UIColor {
-        if #available(iOS 14.0, *) {
-            return UIColor(self)
-        } else {
-            let components = self.cgColor?.components
-            let r = components?[0] ?? 0.0
-            let g = components?[1] ?? 0.0
-            let b = components?[2] ?? 0.0
-            let a = components?[3] ?? 1.0
-            return UIColor(red: r, green: g, blue: b, alpha: a)
-        }
+        return UIColor(self)
     }
 }

@@ -8,18 +8,12 @@ import UserInterface
  */
 class AppConfigurator {
     
-    private let appearenceConfigurator: AppAppearenceConfigurator
-    
-    init() {
-        self.appearenceConfigurator = AppAppearenceConfigurator()
-    }
-    
     /**
      Performs configuration.
      */
     func setup() {
         setupKit()
-        appearenceConfigurator.configure()
+        AppAppearenceConfigurator().configure()
     }
     
     private func setupKit() {

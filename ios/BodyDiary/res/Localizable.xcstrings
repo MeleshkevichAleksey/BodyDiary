@@ -156,6 +156,28 @@
         }
       }
     },
+    "Settings.Interface.Header" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose your interface"
+          }
+        }
+      }
+    },
+    "Settings.Interface.NavigationTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appearence"
+          }
+        }
+      }
+    },
     "Settings.PersonalData.Title" : {
       "extractionState" : "manual",
       "localizations" : {

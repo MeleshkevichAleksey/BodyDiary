@@ -37,6 +37,7 @@
 		A63D70912C27256C00E96F03 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A63D70902C27256C00E96F03 /* Lottie */; };
 		A63D70962C2788B500E96F03 /* UserDefaultsPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D70952C2788B500E96F03 /* UserDefaultsPropertyWrapper.swift */; };
 		A63F7BAA2C603032009198F3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F7BA92C603032009198F3 /* Colors.swift */; };
+		A63F7BAC2C6044C7009198F3 /* SettingsInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F7BAB2C6044C7009198F3 /* SettingsInterfaceView.swift */; };
 		A645F04E2C5ADF9B00880B4C /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645F04D2C5ADF9B00880B4C /* AppConfiguration.swift */; };
 		A645F0502C5AE03100880B4C /* AppConfigurationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645F04F2C5AE03100880B4C /* AppConfigurationProvider.swift */; };
 		A645F0532C5AF09400880B4C /* AppFatalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645F0522C5AF09400880B4C /* AppFatalError.swift */; };
@@ -189,6 +190,7 @@
 		A62A59012B951DA5009E953F /* DiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewModel.swift; sourceTree = "<group>"; };
 		A63D70952C2788B500E96F03 /* UserDefaultsPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsPropertyWrapper.swift; sourceTree = "<group>"; };
 		A63F7BA92C603032009198F3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A63F7BAB2C6044C7009198F3 /* SettingsInterfaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInterfaceView.swift; sourceTree = "<group>"; };
 		A645F04D2C5ADF9B00880B4C /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		A645F04F2C5AE03100880B4C /* AppConfigurationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurationProvider.swift; sourceTree = "<group>"; };
 		A645F0522C5AF09400880B4C /* AppFatalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFatalError.swift; sourceTree = "<group>"; };
@@ -328,8 +330,8 @@
 		A621374D2C1F77930054E13F /* settings */ = {
 			isa = PBXGroup;
 			children = (
-				A6E55C7C2C40AC93000C29DE /* userAvatar */,
-				A6C11AD72C38BDE100980AC0 /* interfaceSelection */,
+				A63F7BAD2C604614009198F3 /* user */,
+				A6C11AD72C38BDE100980AC0 /* interface */,
 				A621374E2C1F77A60054E13F /* SettingsView.swift */,
 			);
 			path = settings;
@@ -495,6 +497,14 @@
 				A63F7BA92C603032009198F3 /* Colors.swift */,
 			);
 			path = colors;
+			sourceTree = "<group>";
+		};
+		A63F7BAD2C604614009198F3 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				A6E55C7C2C40AC93000C29DE /* avatar */,
+			);
+			path = user;
 			sourceTree = "<group>";
 		};
 		A645F0512C5AE0FA00880B4C /* provider */ = {
@@ -712,12 +722,13 @@
 			path = res;
 			sourceTree = "<group>";
 		};
-		A6C11AD72C38BDE100980AC0 /* interfaceSelection */ = {
+		A6C11AD72C38BDE100980AC0 /* interface */ = {
 			isa = PBXGroup;
 			children = (
 				A6C11AD82C38BE0900980AC0 /* InterfaceSelectionView.swift */,
+				A63F7BAB2C6044C7009198F3 /* SettingsInterfaceView.swift */,
 			);
-			path = interfaceSelection;
+			path = interface;
 			sourceTree = "<group>";
 		};
 		A6DBC23F2BBB04790024653E /* extensions */ = {
@@ -800,12 +811,12 @@
 			path = previews;
 			sourceTree = "<group>";
 		};
-		A6E55C7C2C40AC93000C29DE /* userAvatar */ = {
+		A6E55C7C2C40AC93000C29DE /* avatar */ = {
 			isa = PBXGroup;
 			children = (
 				A6E55C7D2C40AE3D000C29DE /* UserAvatarView.swift */,
 			);
-			path = userAvatar;
+			path = avatar;
 			sourceTree = "<group>";
 		};
 		A6EB16082C59881D00AA1B33 /* config */ = {
@@ -1137,6 +1148,7 @@
 				A64FA5EB2C21066000CC50C8 /* LaunchView.swift in Sources */,
 				A66713B42C2B86AB00DA2A06 /* OnboardingTextPageView.swift in Sources */,
 				A645F0552C5AF5AF00880B4C /* AppTabsConfiguration.swift in Sources */,
+				A63F7BAC2C6044C7009198F3 /* SettingsInterfaceView.swift in Sources */,
 				A6EB160A2C59884300AA1B33 /* AppAppearenceConfigurator.swift in Sources */,
 				A621374F2C1F77A60054E13F /* SettingsView.swift in Sources */,
 				A66713C32C2B9C8F00DA2A06 /* OnboardingUserDataView.swift in Sources */,

@@ -1,0 +1,113 @@
+{
+  "direct_dep_identities": [
+    "lottie-ios",
+    "popupview"
+  ],
+  "modules": [
+    {
+      "name": "Lottie",
+      "c99name": "Lottie",
+      "src_type": "swift",
+      "label": "@swiftpkg_lottie_ios//:Sources_Lottie",
+      "modulemap_label": "@swiftpkg_lottie_ios//:Sources_Lottie_modulemap",
+      "package_identity": "lottie-ios",
+      "product_memberships": [
+        "Lottie"
+      ]
+    },
+    {
+      "name": "PopupView",
+      "c99name": "PopupView",
+      "src_type": "swift",
+      "label": "@swiftpkg_popupview//:Sources_PopupView",
+      "modulemap_label": "@swiftpkg_popupview//:Sources_PopupView_modulemap",
+      "package_identity": "popupview",
+      "product_memberships": [
+        "PopupView"
+      ]
+    },
+    {
+      "name": "SwiftUIIntrospect",
+      "c99name": "SwiftUIIntrospect",
+      "src_type": "swift",
+      "label": "@swiftpkg_swiftui_introspect//:Sources_SwiftUIIntrospect",
+      "package_identity": "swiftui-introspect",
+      "product_memberships": [
+        "SwiftUIIntrospect",
+        "SwiftUIIntrospect-Static",
+        "SwiftUIIntrospect-Dynamic"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "identity": "lottie-ios",
+      "name": "Lottie",
+      "type": "library",
+      "target_labels": [
+        "@swiftpkg_lottie_ios//:Sources_Lottie"
+      ]
+    },
+    {
+      "identity": "popupview",
+      "name": "PopupView",
+      "type": "library",
+      "target_labels": [
+        "@swiftpkg_popupview//:Sources_PopupView"
+      ]
+    },
+    {
+      "identity": "swiftui-introspect",
+      "name": "SwiftUIIntrospect",
+      "type": "library",
+      "target_labels": [
+        "@swiftpkg_swiftui_introspect//:Sources_SwiftUIIntrospect"
+      ]
+    },
+    {
+      "identity": "swiftui-introspect",
+      "name": "SwiftUIIntrospect-Dynamic",
+      "type": "library",
+      "target_labels": [
+        "@swiftpkg_swiftui_introspect//:Sources_SwiftUIIntrospect"
+      ]
+    },
+    {
+      "identity": "swiftui-introspect",
+      "name": "SwiftUIIntrospect-Static",
+      "type": "library",
+      "target_labels": [
+        "@swiftpkg_swiftui_introspect//:Sources_SwiftUIIntrospect"
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "name": "swiftpkg_lottie_ios",
+      "identity": "lottie-ios",
+      "remote": {
+        "commit": "fe4c6fe3a0aa66cdeb51d549623c82ca9704b9a5",
+        "remote": "https://github.com/airbnb/lottie-ios.git",
+        "version": "4.5.0"
+      }
+    },
+    {
+      "name": "swiftpkg_popupview",
+      "identity": "popupview",
+      "remote": {
+        "commit": "e0356204053793d63b09eef5e8d87b7108bfd68f",
+        "remote": "https://github.com/exyte/PopupView",
+        "version": "3.1.0"
+      }
+    },
+    {
+      "name": "swiftpkg_swiftui_introspect",
+      "identity": "swiftui-introspect",
+      "remote": {
+        "commit": "807f73ce09a9b9723f12385e592b4e0aaebd3336",
+        "remote": "https://github.com/siteline/swiftui-introspect",
+        "version": "1.3.0"
+      }
+    }
+  ]
+}

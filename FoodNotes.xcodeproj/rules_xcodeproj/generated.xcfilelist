@@ -1,2 +1,0 @@
-$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/App/rules_xcodeproj/App/Info.plist
-$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_lottie_ios/Sources_Lottie_resource_bundle_accessor_ResourceBundleAccessor.swift

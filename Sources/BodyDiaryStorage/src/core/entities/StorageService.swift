@@ -1,6 +1,6 @@
 import SwiftData
 
-public class BodyDiaryStorageService {
+public class StorageService {
     
     public static func getCurrentSchema() -> Schema {
         Schema([

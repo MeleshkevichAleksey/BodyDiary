@@ -169,35 +169,35 @@
 				LastUpgradeCheck = 9999;
 				TargetAttributes = {
 					FF0100000000000000000001 = {
-						CreatedOnToolsVersion = 15.4.0;
+						CreatedOnToolsVersion = 15.2.0;
 						LastSwiftMigration = 9999;
 					};
 					0500C315BEED000000000001 = {
-						CreatedOnToolsVersion = 15.4.0;
+						CreatedOnToolsVersion = 15.2.0;
 						LastSwiftMigration = 9999;
 					};
 					000065250F85000000000001 = {
-						CreatedOnToolsVersion = 15.4.0;
+						CreatedOnToolsVersion = 15.2.0;
 						LastSwiftMigration = 9999;
 					};
 					01003058EFBA000000000001 = {
-						CreatedOnToolsVersion = 15.4.0;
+						CreatedOnToolsVersion = 15.2.0;
 						LastSwiftMigration = 9999;
 					};
 					000013469094000000000001 = {
-						CreatedOnToolsVersion = 15.4.0;
+						CreatedOnToolsVersion = 15.2.0;
 						LastSwiftMigration = 9999;
 					};
 					0200C3CE002F000000000001 = {
-						CreatedOnToolsVersion = 15.4.0;
+						CreatedOnToolsVersion = 15.2.0;
 						LastSwiftMigration = 9999;
 					};
 					04001E97B5A6000000000001 = {
-						CreatedOnToolsVersion = 15.4.0;
+						CreatedOnToolsVersion = 15.2.0;
 						LastSwiftMigration = 9999;
 					};
 					030031CE9352000000000001 = {
-						CreatedOnToolsVersion = 15.4.0;
+						CreatedOnToolsVersion = 15.2.0;
 						LastSwiftMigration = 9999;
 					};
 				};
@@ -258,7 +258,7 @@
 				BAZEL_TARGET_ID = "@@//Sources/BodyDiaryKit:BodyDiaryKit ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680";
 				COMPILE_TARGET_NAME = BodyDiaryKit;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -enforce-exclusivity=checked -emit-const-values-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryKit/BodyDiaryKit_objs/src/AppFatalError.swift.swiftconstvalues -DDEBUG -Onone -Xfrontend -internalize-at-link -enable-testing -disable-sandbox -Xcc -iquote -Xcc $(PROJECT_DIR) -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -Xfrontend -disable-clang-spi -enable-experimental-feature AccessLevelOnImport -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -enforce-exclusivity=checked -emit-const-values-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryKit/BodyDiaryKit_objs/src/AppFatalError.swift.swiftconstvalues -DDEBUG -Onone -Xfrontend -internalize-at-link -enable-testing -Xcc -iquote -Xcc $(PROJECT_DIR) -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -Xfrontend -disable-clang-spi -enable-experimental-feature AccessLevelOnImport -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
 				PRODUCT_MODULE_NAME = BodyDiaryKit;
 				PRODUCT_NAME = BodyDiaryKit;
 				SDKROOT = iphoneos;
@@ -336,7 +336,7 @@
 				BAZEL_TARGET_ID = "@@//Sources/BodyDiaryUI:BodyDiaryUI ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680";
 				COMPILE_TARGET_NAME = BodyDiaryUI;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -enforce-exclusivity=checked -emit-const-values-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryUI/BodyDiaryUI_objs/src/atomic/Fonts.swift.swiftconstvalues -DDEBUG -Onone -Xfrontend -internalize-at-link -enable-testing -disable-sandbox -Xcc -iquote -Xcc $(PROJECT_DIR) -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -Xfrontend -disable-clang-spi -enable-experimental-feature AccessLevelOnImport -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -enforce-exclusivity=checked -emit-const-values-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryUI/BodyDiaryUI_objs/src/atomic/Fonts.swift.swiftconstvalues -DDEBUG -Onone -Xfrontend -internalize-at-link -enable-testing -Xcc -iquote -Xcc $(PROJECT_DIR) -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -Xfrontend -disable-clang-spi -enable-experimental-feature AccessLevelOnImport -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
 				PRODUCT_MODULE_NAME = BodyDiaryUI;
 				PRODUCT_NAME = BodyDiaryUI;
 				SDKROOT = iphoneos;
@@ -410,7 +410,7 @@
 				BAZEL_TARGET_ID = "@@//Sources/BodyDiaryStorage:BodyDiaryStorage ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680";
 				COMPILE_TARGET_NAME = BodyDiaryStorage;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -enforce-exclusivity=checked -emit-const-values-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryStorage/BodyDiaryStorage_objs/src/core/entities/DailyRecordEntity.swift.swiftconstvalues -DDEBUG -Onone -Xfrontend -internalize-at-link -enable-testing -disable-sandbox -Xcc -iquote -Xcc $(PROJECT_DIR) -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -Xfrontend -disable-clang-spi -enable-experimental-feature AccessLevelOnImport -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -enforce-exclusivity=checked -emit-const-values-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryStorage/BodyDiaryStorage_objs/src/core/entities/DailyRecordEntity.swift.swiftconstvalues -DDEBUG -Onone -Xfrontend -internalize-at-link -enable-testing -Xcc -iquote -Xcc $(PROJECT_DIR) -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -Xfrontend -disable-clang-spi -enable-experimental-feature AccessLevelOnImport -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
 				PRODUCT_MODULE_NAME = BodyDiaryStorage;
 				PRODUCT_NAME = BodyDiaryStorage;
 				SDKROOT = iphoneos;
@@ -762,7 +762,7 @@
 				BAZEL_TARGET_ID = "@@swiftpkg_lottie_ios//:Sources_Lottie ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680";
 				COMPILE_TARGET_NAME = Sources_Lottie;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -emit-objc-header-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_lottie_ios/Sources_Lottie-Swift.h -enforce-exclusivity=checked -emit-const-values-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_lottie_ios/Sources_Lottie_objs/Sources/Private/CoreAnimation/Animations/CAAnimation+TimingConfiguration.swift.swiftconstvalues -DDEBUG -Onone -Xfrontend -internalize-at-link -enable-testing -disable-sandbox -Xcc -iquote -Xcc $(PROJECT_DIR) -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -DSWIFT_PACKAGE -Xfrontend -disable-clang-spi -enable-experimental-feature AccessLevelOnImport -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -emit-objc-header-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_lottie_ios/Sources_Lottie-Swift.h -enforce-exclusivity=checked -emit-const-values-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_lottie_ios/Sources_Lottie_objs/Sources/Private/CoreAnimation/Animations/CAAnimation+TimingConfiguration.swift.swiftconstvalues -DDEBUG -Onone -Xfrontend -internalize-at-link -enable-testing -Xcc -iquote -Xcc $(PROJECT_DIR) -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -DSWIFT_PACKAGE -Xfrontend -disable-clang-spi -enable-experimental-feature AccessLevelOnImport -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
 				PRODUCT_MODULE_NAME = Lottie;
 				PRODUCT_NAME = Sources_Lottie;
 				SDKROOT = iphoneos;
@@ -891,7 +891,7 @@
 				BAZEL_TARGET_ID = "@@swiftpkg_swiftui_introspect//:Sources_SwiftUIIntrospect ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680";
 				COMPILE_TARGET_NAME = Sources_SwiftUIIntrospect;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -enforce-exclusivity=checked -emit-const-values-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_swiftui_introspect/Sources_SwiftUIIntrospect_objs/Sources/Introspect.swift.swiftconstvalues -DDEBUG -Onone -Xfrontend -internalize-at-link -enable-testing -disable-sandbox -Xcc -iquote -Xcc $(PROJECT_DIR) -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -DSWIFT_PACKAGE -Xfrontend -disable-clang-spi -enable-experimental-feature AccessLevelOnImport -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -enforce-exclusivity=checked -emit-const-values-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_swiftui_introspect/Sources_SwiftUIIntrospect_objs/Sources/Introspect.swift.swiftconstvalues -DDEBUG -Onone -Xfrontend -internalize-at-link -enable-testing -Xcc -iquote -Xcc $(PROJECT_DIR) -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -DSWIFT_PACKAGE -Xfrontend -disable-clang-spi -enable-experimental-feature AccessLevelOnImport -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
 				PRODUCT_MODULE_NAME = SwiftUIIntrospect;
 				PRODUCT_NAME = Sources_SwiftUIIntrospect;
 				SDKROOT = iphoneos;
@@ -965,7 +965,7 @@
 				BAZEL_TARGET_ID = "@@swiftpkg_popupview//:Sources_PopupView ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680";
 				COMPILE_TARGET_NAME = Sources_PopupView;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -emit-objc-header-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_popupview/Sources_PopupView-Swift.h -enforce-exclusivity=checked -emit-const-values-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_popupview/Sources_PopupView_objs/Sources/PopupView/FullscreenPopup.swift.swiftconstvalues -DDEBUG -Onone -Xfrontend -internalize-at-link -enable-testing -disable-sandbox -I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_swiftui_introspect -Xcc -iquote -Xcc $(PROJECT_DIR) -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -Xcc -DSWIFT_PACKAGE -DSWIFT_PACKAGE -Xfrontend -disable-clang-spi -enable-experimental-feature AccessLevelOnImport -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -emit-objc-header-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_popupview/Sources_PopupView-Swift.h -enforce-exclusivity=checked -emit-const-values-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_popupview/Sources_PopupView_objs/Sources/PopupView/FullscreenPopup.swift.swiftconstvalues -DDEBUG -Onone -Xfrontend -internalize-at-link -enable-testing -I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_swiftui_introspect -Xcc -iquote -Xcc $(PROJECT_DIR) -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -Xcc -DSWIFT_PACKAGE -DSWIFT_PACKAGE -Xfrontend -disable-clang-spi -enable-experimental-feature AccessLevelOnImport -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
 				PRODUCT_MODULE_NAME = PopupView;
 				PRODUCT_NAME = Sources_PopupView;
 				SDKROOT = iphoneos;
@@ -1100,7 +1100,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LINK_PARAMS_FILE = "$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/App/App.rules_xcodeproj.link.params";
 				OTHER_LDFLAGS = "@$(DERIVED_FILE_DIR)/link.params";
-				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) $(PREVIEWS_SWIFT_INCLUDE__$(ENABLE_PREVIEWS)) -enforce-exclusivity=checked -emit-const-values-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/App/app.library_objs/src/extensions/storage/DailyRecordEntity+Formatted.swift.swiftconstvalues -DDEBUG -Onone -Xfrontend -internalize-at-link -enable-testing -disable-sandbox -I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryKit -I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryStorage -I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryUI -I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_lottie_ios -I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_swiftui_introspect -I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_popupview -Xcc -iquote -Xcc $(BAZEL_EXTERNAL)/swiftpkg_lottie_ios -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_lottie_ios -Xcc -iquote -Xcc $(BAZEL_EXTERNAL)/swiftpkg_popupview -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_popupview -Xcc -iquote -Xcc $(PROJECT_DIR) -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -Xcc -DSWIFT_PACKAGE -Xcc -fmodule-map-file=$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_lottie_ios/Sources_Lottie_modulemap/_/module.modulemap -Xcc -fmodule-map-file=$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_popupview/Sources_PopupView_modulemap/_/module.modulemap -DSWIFT_PACKAGE -Xfrontend -disable-clang-spi -enable-experimental-feature AccessLevelOnImport -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) $(PREVIEWS_SWIFT_INCLUDE__$(ENABLE_PREVIEWS)) -enforce-exclusivity=checked -emit-const-values-path bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/App/app.library_objs/src/extensions/storage/DailyRecordEntity+Formatted.swift.swiftconstvalues -DDEBUG -Onone -Xfrontend -internalize-at-link -enable-testing -I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryKit -I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryStorage -I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryUI -I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_lottie_ios -I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_swiftui_introspect -I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_popupview -Xcc -iquote -Xcc $(BAZEL_EXTERNAL)/swiftpkg_lottie_ios -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_lottie_ios -Xcc -iquote -Xcc $(BAZEL_EXTERNAL)/swiftpkg_popupview -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_popupview -Xcc -iquote -Xcc $(PROJECT_DIR) -Xcc -iquote -Xcc $(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -Xcc -DSWIFT_PACKAGE -Xcc -fmodule-map-file=$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_lottie_ios/Sources_Lottie_modulemap/_/module.modulemap -Xcc -fmodule-map-file=$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_popupview/Sources_PopupView_modulemap/_/module.modulemap -DSWIFT_PACKAGE -Xfrontend -disable-clang-spi -enable-experimental-feature AccessLevelOnImport -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
 				PREVIEWS_SWIFT_INCLUDE__ = "";
 				PREVIEWS_SWIFT_INCLUDE__NO = "";
 				PREVIEWS_SWIFT_INCLUDE__YES = "-I$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/App";
@@ -1450,6 +1450,7 @@
 		FE18A8E3F972EC51EC8CA34C /* EpoxyModelStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpoxyModelStorage.swift; sourceTree = "<group>"; };
 		FE1950220074FDFE26430773 /* Data+Compression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Compression.swift"; sourceTree = "<group>"; };
 		FE196376397BB08C93A8446D /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		FE19EC8E5BB17407BBCA33A5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		FE1ABC14941CDA7E7266EBD3 /* SingleValueProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleValueProvider.swift; sourceTree = "<group>"; };
 		FE1AFB0323E8D9CB2FF40CFE /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		FE1B099B30DA0BA84447FBDA /* AnimatedSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSwitch.swift; sourceTree = "<group>"; };
@@ -1668,6 +1669,15 @@
 		FE3FAEA846932E83AB5574A6 /* VectorsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorsExtensions.swift; sourceTree = "<group>"; };
 		FE400394730E33692460B828 /* AnyNodeProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyNodeProperty.swift; sourceTree = "<group>"; };
 		FE409BF76A786C0A22FEF566 /* PopupScrollViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupScrollViewDelegate.swift; sourceTree = "<group>"; };
+		FE4242E080209FFE907BDCBE /* PreviewContent */ = {
+			isa = PBXGroup;
+			children = (
+				FE54C96FBA5A0611D3DFD9D2 /* .DS_Store */,
+				FEA75CB7501154FE1D272104 /* Preview Assets.xcassets */,
+			);
+			path = PreviewContent;
+			sourceTree = "<group>";
+		};
 		FE4288A259294E40ABE15F7E /* FilepathImageProvider.macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilepathImageProvider.macOS.swift; sourceTree = "<group>"; };
 		FE42B29AB1E555F1957EB1B3 /* ViewDifferentiatorProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDifferentiatorProviding.swift; sourceTree = "<group>"; };
 		FE4352797835F66092ABCDB3 /* AssetLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetLibrary.swift; sourceTree = "<group>"; };
@@ -1790,6 +1800,7 @@
 			path = "bazel-out/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/App";
 			sourceTree = SOURCE_ROOT;
 		};
+		FE54C96FBA5A0611D3DFD9D2 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
 		FE54DDEEDD280210EC585B73 /* BodyDiaryStorage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1806,6 +1817,17 @@
 				FE4DFE13E70533C3B3818DF9 /* TrimPathNode.swift */,
 			);
 			path = ModifierNodes;
+			sourceTree = "<group>";
+		};
+		FE56B9D5053117FB9FA66935 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				FE4242E080209FFE907BDCBE /* PreviewContent */,
+				FEE67E21CDC396A3C0068D56 /* Assets.xcassets */,
+				FE93F1630B98DDEAEEEAFCF1 /* LaunchAnimation.json */,
+				FE19EC8E5BB17407BBCA33A5 /* Localizable.strings */,
+			);
+			path = res;
 			sourceTree = "<group>";
 		};
 		FE56EEC22CA27785EEBCAE91 /* EpoxyCore */ = {
@@ -2255,6 +2277,7 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		FE93F1630B98DDEAEEEAFCF1 /* LaunchAnimation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LaunchAnimation.json; sourceTree = "<group>"; };
 		FE940999F9102FC8945892D0 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
@@ -2439,6 +2462,7 @@
 			path = LayerEffectNodes;
 			sourceTree = "<group>";
 		};
+		FEA75CB7501154FE1D272104 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FEA764F5B18CF7B7439341A1 /* ZipFoundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -2785,12 +2809,12 @@
 		FEBFB8717DD7F4C33ED32437 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				FE56B9D5053117FB9FA66935 /* res */,
 				FE97857D1B01CE0CC70EAA44 /* src */,
 				FE54AB53FC7AB690890DCEE9 /* Bazel Generated */,
 				FE5AA950C51A3BEB844DA3E0 /* BodyDiary.entitlements */,
 				FE01F0A3E569583EDEAFBEF6 /* BUILD */,
 				FEED265DC698447961B8A85B /* Info.plist */,
-				FED0F024DB44B0FF5AEEF871 /* PreviewContent */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -2875,7 +2899,6 @@
 		FECEF1F2CD32A6412B1F2C64 /* LottieAnimationHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationHelpers.swift; sourceTree = "<group>"; };
 		FECFEFA234C32FBF50B4DABD /* SetContentProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetContentProviding.swift; sourceTree = "<group>"; };
 		FED061E41F568F20A3E6A544 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
-		FED0F024DB44B0FF5AEEF871 /* PreviewContent */ = {isa = PBXFileReference; lastKnownFileType = file; path = PreviewContent; sourceTree = "<group>"; };
 		FED25D851B29535A6939B0B1 /* StartAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAppView.swift; sourceTree = "<group>"; };
 		FED276CF5C15AF33BE528664 /* OnboardingUserDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUserDataView.swift; sourceTree = "<group>"; };
 		FED298CF2856A5C2898879AB /* FillRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillRenderer.swift; sourceTree = "<group>"; };
@@ -2977,6 +3000,7 @@
 		};
 		FEE63CAD4D51ED718EFDD7FC /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		FEE641B4C01C312F8A0C0FE7 /* SizeValueProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeValueProvider.swift; sourceTree = "<group>"; };
+		FEE67E21CDC396A3C0068D56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEE67F41D6C88F16B1A569B8 /* LottieLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieLogger.swift; sourceTree = "<group>"; };
 		FEE6D88CFE8104DBB0B14047 /* RenderLayers */ = {
 			isa = PBXGroup;

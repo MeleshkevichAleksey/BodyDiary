@@ -10,7 +10,7 @@ struct BodyDiaryApp: App {
     private let forceDarkMode: Bool
     
     var sharedModelContainer: ModelContainer = {
-        let schema = BodyDiaryStorageService.getCurrentSchema()
+        let schema = StorageService.getCurrentSchema()
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {

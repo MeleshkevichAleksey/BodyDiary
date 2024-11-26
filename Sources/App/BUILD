@@ -19,8 +19,13 @@ apple_bundle_version(
 
 swift_library(
     name = "app.library",
-    srcs = glob(["src/**/*.swift"]),
-    data = [":PreviewContent"],
+    srcs = glob([
+        "src/**/*.swift"
+    ]),
+    data = [
+        "PreviewContent",
+        "res/LaunchAnimation.json"
+    ],
     module_name = "App",
     visibility = ["//visibility:public"],
     deps = [
@@ -32,6 +37,11 @@ swift_library(
     ]
 )
 
+filegroup(
+    name = "PreviewContent",
+    srcs = glob(["res/PreviewContent/**"]),
+)
+
 local_provisioning_profile(
     name = "xcode_managed_profile",
     profile_name = "iOS Team Provisioning Profile: com.meleshhhkevich.BodyDiary",
@@ -40,7 +50,7 @@ local_provisioning_profile(
 
 ios_application(
     name = "App",
-    app_icons = glob(["Assets/Assets.xcassets/AppIcon.appiconset/**"]),
+    app_icons = glob(["res/Assets.xcassets/AppIcon.appiconset/**"]),
     bundle_id = "com.meleshhhkevich.BodyDiary",
     bundle_name = "BodyDiary",
     entitlements = "BodyDiary.entitlements",
@@ -48,8 +58,13 @@ ios_application(
     families = ["iphone", "ipad"],
     infoplists = [":Info.plist"],
     minimum_os_version = app_config.minimum_ios_version,
-    resources = glob(["Assets/Assets.xcassets/**"]),
-    strings = glob(["*.xcstrings"]),
+    resources = glob(
+        [
+            "res/Assets.xcassets/**",
+        ],
+        exclude = ["res/Assets.xcassets/AppIcon.appiconset/**"],
+    ),
+    strings = glob(["res/*.strings"]),
     version = ":Version",
     visibility = ["//visibility:public"],
     deps = [

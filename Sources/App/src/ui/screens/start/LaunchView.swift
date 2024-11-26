@@ -1,12 +1,12 @@
 import SwiftUI
 import Lottie
-import BodyDiaryUI
-import BodyDiaryKit
+import FoodNotesUI
+import FoodNotesKit
 
 struct LaunchView: View {
     
     @StateObject
-    private var interfaceService: BodyDiaryUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
     
     var body: some View {
         LottieView(animation: .named("LaunchAnimation"))

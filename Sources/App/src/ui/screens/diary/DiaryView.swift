@@ -1,6 +1,6 @@
 import SwiftUI
 import SwiftData
-import BodyDiaryStorage
+import FoodNotesStorage
 import Foundation
 
 struct DiaryView: View {

@@ -14,10 +14,10 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "04001E97B5A6000000000001"
-                     BuildableName = "PopupView"
-                     BlueprintName = "PopupView"
-                     ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+                     BlueprintIdentifier = "0200066FBBAA000000000001"
+                     BuildableName = "FoodNotesUI"
+                     BlueprintName = "FoodNotesUI"
+                     ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -30,10 +30,10 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "04001E97B5A6000000000001"
-                     BuildableName = "PopupView"
-                     BlueprintName = "PopupView"
-                     ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+                     BlueprintIdentifier = "0200066FBBAA000000000001"
+                     BuildableName = "FoodNotesUI"
+                     BlueprintName = "FoodNotesUI"
+                     ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -48,10 +48,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "04001E97B5A6000000000001"
-               BuildableName = "PopupView"
-               BlueprintName = "PopupView"
-               ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+               BlueprintIdentifier = "0200066FBBAA000000000001"
+               BuildableName = "FoodNotesUI"
+               BlueprintName = "FoodNotesUI"
+               ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -1,12 +1,12 @@
 import SwiftUI
-import BodyDiaryKit
-import BodyDiaryUI
-import BodyDiaryStorage
+import FoodNotesKit
+import FoodNotesUI
+import FoodNotesStorage
 
 struct AppTabBarView: View {
     
     @StateObject
-    private var interfaceService: BodyDiaryUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
     
     @Inject
     private var appConfigurationProvider: AppConfigurationProvider

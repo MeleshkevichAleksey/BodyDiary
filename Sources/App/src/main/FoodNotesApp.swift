@@ -1,11 +1,11 @@
 import SwiftUI
 import SwiftData
-import BodyDiaryStorage
-import BodyDiaryKit
-import BodyDiaryUI
+import FoodNotesStorage
+import FoodNotesKit
+import FoodNotesUI
 
 @main
-struct BodyDiaryApp: App {
+struct FoodNotesApp: App {
     
     private let forceDarkMode: Bool
     

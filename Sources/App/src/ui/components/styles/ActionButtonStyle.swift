@@ -1,11 +1,11 @@
 import SwiftUI
-import BodyDiaryUI
-import BodyDiaryKit
+import FoodNotesUI
+import FoodNotesKit
 
 struct ActionButtonStyle: ButtonStyle {
     
     @StateObject
-    private var interfaceService: BodyDiaryUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
     
     @Binding
     var isSelected: Bool

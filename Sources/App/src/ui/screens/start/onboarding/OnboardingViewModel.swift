@@ -1,5 +1,5 @@
 import SwiftUI
-import BodyDiaryKit
+import FoodNotesKit
 
 /**
  Onboarding view model.

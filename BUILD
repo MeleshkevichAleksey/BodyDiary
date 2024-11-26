@@ -52,7 +52,7 @@ gazelle(
 
 xcodeproj(
     name = "xcodeproj",
-    project_name = "BodyDiary",
+    project_name = "FoodNotes",
     tags = ["manual"],
     top_level_targets = [
         top_level_target(

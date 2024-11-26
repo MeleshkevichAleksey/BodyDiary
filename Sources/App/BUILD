@@ -29,9 +29,9 @@ swift_library(
     module_name = "App",
     visibility = ["//visibility:public"],
     deps = [
-        "//Sources/BodyDiaryKit:BodyDiaryKit",
-        "//Sources/BodyDiaryStorage:BodyDiaryStorage",
-        "//Sources/BodyDiaryUI:BodyDiaryUI",
+        "//Sources/FoodNotesKit:FoodNotesKit",
+        "//Sources/FoodNotesStorage:FoodNotesStorage",
+        "//Sources/FoodNotesUI:FoodNotesUI",
         "@swiftpkg_lottie_ios//:Sources_Lottie",
         "@swiftpkg_popupview//:Sources_PopupView",
     ]
@@ -44,17 +44,17 @@ filegroup(
 
 local_provisioning_profile(
     name = "xcode_managed_profile",
-    profile_name = "iOS Team Provisioning Profile: com.meleshhhkevich.BodyDiary",
+    profile_name = "iOS Team Provisioning Profile: com.meleshhhkevich.FoodNotes",
     tags = ["manual"],
 )
 
 ios_application(
     name = "App",
     app_icons = glob(["res/Assets.xcassets/AppIcon.appiconset/**"]),
-    bundle_id = "com.meleshhhkevich.BodyDiary",
-    bundle_name = "BodyDiary",
-    entitlements = "BodyDiary.entitlements",
-    executable_name = "BodyDiary",
+    bundle_id = "com.meleshhhkevich.FoodNotes",
+    bundle_name = "FoodNotes",
+    entitlements = "FoodNotes.entitlements",
+    executable_name = "FoodNotes",
     families = ["iphone", "ipad"],
     infoplists = [":Info.plist"],
     minimum_os_version = app_config.minimum_ios_version,

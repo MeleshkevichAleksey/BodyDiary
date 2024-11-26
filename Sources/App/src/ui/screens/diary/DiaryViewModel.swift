@@ -1,5 +1,5 @@
 import SwiftUI
-import BodyDiaryStorage
+import FoodNotesStorage
 
 @MainActor
 class DiaryViewModel: ObservableObject, Identifiable {

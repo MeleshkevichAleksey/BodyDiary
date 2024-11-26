@@ -14,10 +14,10 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "0500C315BEED000000000001"
-                     BuildableName = "BodyDiary.app"
-                     BlueprintName = "BodyDiary"
-                     ReferencedContainer = "container:/Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+                     BlueprintIdentifier = "0600C315BEED000000000001"
+                     BuildableName = "FoodNotes.app"
+                     BlueprintName = "FoodNotes"
+                     ReferencedContainer = "container:/Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -30,10 +30,10 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "0500C315BEED000000000001"
-                     BuildableName = "BodyDiary.app"
-                     BlueprintName = "BodyDiary"
-                     ReferencedContainer = "container:/Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+                     BlueprintIdentifier = "0600C315BEED000000000001"
+                     BuildableName = "FoodNotes.app"
+                     BlueprintName = "FoodNotes"
+                     ReferencedContainer = "container:/Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -48,10 +48,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0500C315BEED000000000001"
-               BuildableName = "BodyDiary.app"
-               BlueprintName = "BodyDiary"
-               ReferencedContainer = "container:/Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+               BlueprintIdentifier = "0600C315BEED000000000001"
+               BuildableName = "FoodNotes.app"
+               BlueprintName = "FoodNotes"
+               ReferencedContainer = "container:/Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -87,10 +87,10 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "0500C315BEED000000000001"
-                     BuildableName = "BodyDiary.app"
-                     BlueprintName = "BodyDiary"
-                     ReferencedContainer = "container:/Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+                     BlueprintIdentifier = "0600C315BEED000000000001"
+                     BuildableName = "FoodNotes.app"
+                     BlueprintName = "FoodNotes"
+                     ReferencedContainer = "container:/Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -100,10 +100,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0500C315BEED000000000001"
-            BuildableName = "BodyDiary.app"
-            BlueprintName = "BodyDiary"
-            ReferencedContainer = "container:/Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+            BlueprintIdentifier = "0600C315BEED000000000001"
+            BuildableName = "FoodNotes.app"
+            BlueprintName = "FoodNotes"
+            ReferencedContainer = "container:/Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -134,10 +134,10 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "0500C315BEED000000000001"
-                     BuildableName = "BodyDiary.app"
-                     BlueprintName = "BodyDiary"
-                     ReferencedContainer = "container:/Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+                     BlueprintIdentifier = "0600C315BEED000000000001"
+                     BuildableName = "FoodNotes.app"
+                     BlueprintName = "FoodNotes"
+                     ReferencedContainer = "container:/Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -147,10 +147,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0500C315BEED000000000001"
-            BuildableName = "BodyDiary.app"
-            BlueprintName = "BodyDiary"
-            ReferencedContainer = "container:/Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+            BlueprintIdentifier = "0600C315BEED000000000001"
+            BuildableName = "FoodNotes.app"
+            BlueprintName = "FoodNotes"
+            ReferencedContainer = "container:/Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

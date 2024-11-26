@@ -1,6 +1,6 @@
 import SwiftUI
-import BodyDiaryKit
-import BodyDiaryUI
+import FoodNotesKit
+import FoodNotesUI
 
 struct StartAppScreen: View {
     

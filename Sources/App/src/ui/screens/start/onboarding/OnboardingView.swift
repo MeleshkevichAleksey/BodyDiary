@@ -1,11 +1,11 @@
 import SwiftUI
-import BodyDiaryKit
-import BodyDiaryUI
+import FoodNotesKit
+import FoodNotesUI
 
 struct OnboardingView: View {
     
     @StateObject
-    private var interfaceService: BodyDiaryUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
     
     @StateObject
     private var viewModel: OnboardingViewModel

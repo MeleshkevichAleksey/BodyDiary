@@ -14,10 +14,10 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "000013469094000000000001"
-                     BuildableName = "BodyDiaryUI"
-                     BlueprintName = "BodyDiaryUI"
-                     ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+                     BlueprintIdentifier = "040031CE9352000000000001"
+                     BuildableName = "SwiftUIIntrospect"
+                     BlueprintName = "SwiftUIIntrospect"
+                     ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -30,10 +30,10 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "000013469094000000000001"
-                     BuildableName = "BodyDiaryUI"
-                     BlueprintName = "BodyDiaryUI"
-                     ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+                     BlueprintIdentifier = "040031CE9352000000000001"
+                     BuildableName = "SwiftUIIntrospect"
+                     BlueprintName = "SwiftUIIntrospect"
+                     ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -48,10 +48,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "000013469094000000000001"
-               BuildableName = "BodyDiaryUI"
-               BlueprintName = "BodyDiaryUI"
-               ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+               BlueprintIdentifier = "040031CE9352000000000001"
+               BuildableName = "SwiftUIIntrospect"
+               BlueprintName = "SwiftUIIntrospect"
+               ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>BodyDiary</string>
+	<string>FoodNotes</string>
 	<key>CFBundleName</key>
-	<string>BodyDiary</string>
+	<string>FoodNotes</string>
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>

@@ -1,11 +1,11 @@
 import SwiftUI
-import BodyDiaryKit
-import BodyDiaryUI
+import FoodNotesKit
+import FoodNotesUI
 
 struct SectionSegueView: View {
     
     @StateObject
-    private var interfaceService: BodyDiaryUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
     
     let image: Image
     

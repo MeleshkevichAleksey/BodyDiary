@@ -1,11 +1,11 @@
 import SwiftUI
-import BodyDiaryKit
-import BodyDiaryUI
+import FoodNotesKit
+import FoodNotesUI
 
 struct SettingsInterfaceView: View {
     
     @StateObject
-    private var interfaceService: BodyDiaryUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
     
     var body: some View {
         VStack(spacing: 40) {

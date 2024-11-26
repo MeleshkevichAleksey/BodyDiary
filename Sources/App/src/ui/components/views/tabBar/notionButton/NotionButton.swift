@@ -1,6 +1,6 @@
 import SwiftUI
-import BodyDiaryUI
-import BodyDiaryKit
+import FoodNotesUI
+import FoodNotesKit
 
 /**
  Primary button (main use case on tab bar) to add body notions.
@@ -8,7 +8,7 @@ import BodyDiaryKit
 struct NotionButton: View {
     
     @StateObject
-    private var interfaceService: BodyDiaryUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
     
     var body: some View {
         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {

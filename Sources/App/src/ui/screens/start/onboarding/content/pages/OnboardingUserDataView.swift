@@ -1,14 +1,14 @@
 import SwiftUI
 import SwiftData
-import BodyDiaryKit
-import BodyDiaryUI
-import BodyDiaryStorage
+import FoodNotesKit
+import FoodNotesUI
+import FoodNotesStorage
 import PopupView
 
 struct OnboardingUserDataView: View {
     
     @StateObject
-    private var interfaceService: BodyDiaryUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
     
     @Environment(\.modelContext)
     private var modelContext

@@ -1,5 +1,5 @@
 import Foundation
-import BodyDiaryStorage
+import FoodNotesStorage
 
 class UserValidator {
     

@@ -1,14 +1,14 @@
-/* Localized strings for BodyDiary */
+/* Localized strings for FoodNotes */
 
 /* App Name */
-"AppName" = "BodyDiary";
+"AppName" = "FoodNotes";
 
 /* Avatar Picker */
 "AvatarPicker.Title" = "Select your avatar";
 
 /* Onboarding */
 "Onboarding.NextButton.Title" = "Next";
-"Onboarding.Page1.Text" = "Glad to see you dear user!\nThis app purpose is to give you an opportunity to track needed body parameters. Mostly it’s useful for fitness and the model industry, so we hope you will enjoy it!";
+"Onboarding.Page1.Text" = "Welcome! This app is designed to help you easily track your nutrition and water intake, along with other important health metrics. Perfect for anyone focused on wellness, fitness, or maintaining a balanced lifestyle. We’re excited to have you on board!";
 "Onboarding.Page2.GenderDesciption" = "Enter your gender so we can give you tips on your health";
 "Onboarding.Page2.NameDescription" = "Enter your name so we know how to contact you";
 "Onboarding.Page2.NamePlaceholder" = "Your name";

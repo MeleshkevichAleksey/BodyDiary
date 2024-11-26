@@ -1,4 +1,4 @@
-import BodyDiaryKit
+import FoodNotesKit
 
 struct AppTabUnitsConfiguration {
     

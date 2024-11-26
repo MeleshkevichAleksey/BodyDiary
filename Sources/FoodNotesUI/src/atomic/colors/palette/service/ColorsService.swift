@@ -7,9 +7,9 @@ public class ColorsService: ObservableObject, Palette, Equatable {
     }
     
     
-    private static let paletteBodyDiaryStorageKey = "ColorsService.PaletteType"
+    private static let paletteFoodNotesStorageKey = "ColorsService.PaletteType"
     
-    @AppStorage(paletteBodyDiaryStorageKey)
+    @AppStorage(paletteFoodNotesStorageKey)
     private var storedPalette: PaletteType = .standard
     
     @Published

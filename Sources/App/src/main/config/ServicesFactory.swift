@@ -1,5 +1,5 @@
-import BodyDiaryUI
-import BodyDiaryKit
+import FoodNotesUI
+import FoodNotesKit
 
 /**
  App services factory.
@@ -12,7 +12,7 @@ class ServicesFactory {
      - returns: Services objects array.
      */
     static func createServices() -> [AnyObject] {
-        let BodyDiaryUIService = BodyDiaryUIService()
+        let FoodNotesUIService = FoodNotesUIService()
         
         let userService = UserService()
         
@@ -21,7 +21,7 @@ class ServicesFactory {
         let configurationProvider = AppConfigurationProvider()
         
         let services: [AnyObject] = [
-            BodyDiaryUIService,
+            FoodNotesUIService,
             userService,
             logger,
             configurationProvider

@@ -1,4 +1,4 @@
-import BodyDiaryStorage
+import FoodNotesStorage
 import Foundation
 
 /**

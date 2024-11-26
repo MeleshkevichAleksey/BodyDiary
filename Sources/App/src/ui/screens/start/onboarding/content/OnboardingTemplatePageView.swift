@@ -1,6 +1,6 @@
 import SwiftUI
-import BodyDiaryUI
-import BodyDiaryKit
+import FoodNotesUI
+import FoodNotesKit
 
 struct OnboardingTemplatePageView: View {
     
@@ -12,7 +12,7 @@ struct OnboardingTemplatePageView: View {
     var isButtonEnabled: Bool
     
     @StateObject
-    private var interfaceService: BodyDiaryUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
     
     var body: some View {
         VStack {

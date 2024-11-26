@@ -1,7 +1,7 @@
 import SwiftUI
 import UIKit
-import BodyDiaryKit
-import BodyDiaryUI
+import FoodNotesKit
+import FoodNotesUI
 
 /**
  Performs system-based components configuration.
@@ -9,7 +9,7 @@ import BodyDiaryUI
 class AppAppearenceConfigurator {
     
     @Inject
-    private var interfaceService: BodyDiaryUIService
+    private var interfaceService: FoodNotesUIService
     
     func configure() {
         configureTabBar()

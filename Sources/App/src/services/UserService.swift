@@ -2,8 +2,8 @@ import SwiftUI
 
 class UserService: ObservableObject {
     
-    private static let isOnboardingCompletedBodyDiaryStorageKey: String = "isOnboardingCompleted"
+    private static let isOnboardingCompletedFoodNotesStorageKey: String = "isOnboardingCompleted"
     
-    @AppStorage(isOnboardingCompletedBodyDiaryStorageKey)
+    @AppStorage(isOnboardingCompletedFoodNotesStorageKey)
     var isOnboardingCompleted: Bool = false
 }

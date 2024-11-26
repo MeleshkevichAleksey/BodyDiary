@@ -14,10 +14,10 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "000065250F85000000000001"
-                     BuildableName = "BodyDiaryKit"
-                     BlueprintName = "BodyDiaryKit"
-                     ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+                     BlueprintIdentifier = "01003EED0171000000000001"
+                     BuildableName = "FoodNotesStorage"
+                     BlueprintName = "FoodNotesStorage"
+                     ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -30,10 +30,10 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "000065250F85000000000001"
-                     BuildableName = "BodyDiaryKit"
-                     BlueprintName = "BodyDiaryKit"
-                     ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+                     BlueprintIdentifier = "01003EED0171000000000001"
+                     BuildableName = "FoodNotesStorage"
+                     BlueprintName = "FoodNotesStorage"
+                     ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -48,10 +48,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "000065250F85000000000001"
-               BuildableName = "BodyDiaryKit"
-               BlueprintName = "BodyDiaryKit"
-               ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/BodyDiary/BodyDiary.xcodeproj">
+               BlueprintIdentifier = "01003EED0171000000000001"
+               BuildableName = "FoodNotesStorage"
+               BlueprintName = "FoodNotesStorage"
+               ReferencedContainer = "container:../../../../../../../../Users/alexeymeleshkevich/dev/personal/iOS/FoodNotes/FoodNotes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

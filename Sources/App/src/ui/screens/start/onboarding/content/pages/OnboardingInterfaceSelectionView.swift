@@ -1,11 +1,11 @@
 import SwiftUI
-import BodyDiaryKit
-import BodyDiaryUI
+import FoodNotesKit
+import FoodNotesUI
 
 struct OnboardingInterfaceSelectionView: View {
     
     @StateObject
-    private var interfaceService: BodyDiaryUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
     
     @Binding
     var stepCompleted: Bool
@@ -35,6 +35,6 @@ struct OnboardingInterfaceSelectionView: View {
 
 #Preview {
     OnboardingInterfaceSelectionView(stepCompleted: .constant(true))
-        .environmentObject(BodyDiaryUIService())
+        .environmentObject(FoodNotesUIService())
         .preferredColorScheme(.dark)
 }

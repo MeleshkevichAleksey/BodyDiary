@@ -17,12 +17,12 @@ _BUNDLE_EXTENSIONS = [
 _TRIPLE_MATCH = re.compile(r"([^-]+-[^-]+)(-\D+)[^-]*(-.*)?")
 
 _SETTINGS = {
-    "arm64-apple-ios-simulator BodyDiary.app/BodyDiary": {
+    "arm64-apple-ios-simulator FoodNotes.app/FoodNotes": {
         "c": "-iquote$(BAZEL_EXTERNAL)/swiftpkg_lottie_ios -iquote$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_lottie_ios -iquote$(BAZEL_EXTERNAL)/swiftpkg_popupview -iquote$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_popupview -iquote$(PROJECT_DIR) -iquote$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin -DSWIFT_PACKAGE -fmodule-map-file=$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_lottie_ios/Sources_Lottie_modulemap/_/module.modulemap -fmodule-map-file=$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_popupview/Sources_PopupView_modulemap/_/module.modulemap -O0 -DDEBUG=1 -fstack-protector -fstack-protector-all",
         "s": [
-            "$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryKit",
-            "$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryStorage",
-            "$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/BodyDiaryUI",
+            "$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/FoodNotesKit",
+            "$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/FoodNotesStorage",
+            "$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/Sources/FoodNotesUI",
             "$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_lottie_ios",
             "$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_swiftui_introspect",
             "$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min17.0-applebin_ios-ST-1d00ae144680/bin/external/swiftpkg_popupview",

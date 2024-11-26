@@ -1,5 +1,5 @@
-import BodyDiaryKit
-import BodyDiaryUI
+import FoodNotesKit
+import FoodNotesUI
 
 /**
  Performs application configuration:

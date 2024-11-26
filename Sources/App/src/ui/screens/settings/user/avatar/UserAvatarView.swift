@@ -1,7 +1,7 @@
 import SwiftUI
-import BodyDiaryKit
-import BodyDiaryUI
-import BodyDiaryStorage
+import FoodNotesKit
+import FoodNotesUI
+import FoodNotesStorage
 import SwiftData
 import PhotosUI
 import PopupView
@@ -12,7 +12,7 @@ struct UserAvatarView: View {
     private var logger: Logger
     
     @StateObject
-    private var interfaceService: BodyDiaryUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
     
     @Environment(\.modelContext)
     private var modelContext

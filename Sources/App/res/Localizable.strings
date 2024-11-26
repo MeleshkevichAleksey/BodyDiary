@@ -1,0 +1,41 @@
+/* Localized strings for FoodNotes */
+
+/* App Name */
+"AppName" = "FoodNotes";
+
+/* Avatar Picker */
+"AvatarPicker.Title" = "Select your avatar";
+
+/* Onboarding */
+"Onboarding.NextButton.Title" = "Next";
+"Onboarding.Page1.Text" = "Welcome! This app is designed to help you easily track your nutrition and water intake, along with other important health metrics. Perfect for anyone focused on wellness, fitness, or maintaining a balanced lifestyle. We’re excited to have you on board!";
+"Onboarding.Page2.GenderDesciption" = "Enter your gender so we can give you tips on your health";
+"Onboarding.Page2.NameDescription" = "Enter your name so we know how to contact you";
+"Onboarding.Page2.NamePlaceholder" = "Your name";
+"Onboarding.Page3.SelectionDescription" = "Select the interface that suits you best. You can change it in the options later";
+"Onboarding.Welcome" = "Welcome to";
+
+/* Settings */
+"Settings" = "Settings";
+"Settings.Appearance.Title" = "Appearance";
+"Settings.Help.Title" = "Help";
+"Settings.Interface.Header" = "Choose your interface";
+"Settings.Interface.NavigationTitle" = "Appearance";
+"Settings.PersonalData.Title" = "Personal data";
+"Settings.User.Greetings %@" = "Hello %@!";
+
+/* TabBar */
+"TabBar.Diary.Title" = "Diary";
+"TabBar.Settings.Title" = "Settings";
+
+/* Other UI Elements */
+"Activities" = "Activities";
+"Add Item" = "Add Item";
+"Calories" = "Calories";
+"Date" = "Date";
+"Enter your data" = "Enter your data";
+"Error saving user occurred" = "Error saving user occurred";
+"Selected" = "Selected";
+"Unselected" = "Unselected";
+"Steps" = "Steps";
+"Weight" = "Weight";

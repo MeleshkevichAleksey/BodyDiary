@@ -1,2 +1,2 @@
-# BodyDiary
-iOS application to make body-related notes
+# FoodNotes
+iOS application to make food-related notes

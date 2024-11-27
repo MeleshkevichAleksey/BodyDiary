@@ -6,7 +6,7 @@ class AppConfigurationProvider {
     let config: AppConfiguration
     
     init() {
-        let tabs = AppTabUnitsConfiguration(tabs: [.diary, .settings], initialTab: .diary)
+        let tabs = AppTabUnitsConfiguration(tabs: [.notes, .settings], initialTab: .notes)
         
         self.config = AppConfiguration(
             tabs: tabs

@@ -26,6 +26,6 @@ struct TabBarButton: View {
 
 #Preview {
     TabBarButton(isSelected: .constant(true),
-                 item: TabBarButtonItemProvider().provideItem(for: .diary))
+                 item: TabBarButtonItemProvider().provideItem(for: .notes))
         .preferredColorScheme(.dark)
 }

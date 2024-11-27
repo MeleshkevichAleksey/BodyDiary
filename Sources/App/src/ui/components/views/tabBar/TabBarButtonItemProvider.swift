@@ -7,8 +7,8 @@ class TabBarButtonItemProvider {
         let item: TabBarButtonItem
         
         switch unit {
-        case .diary:
-            item = TabBarButtonItem(image: "book", title: "TabBar.Diary.Title")
+        case .notes:
+            item = TabBarButtonItem(image: "book", title: "TabBar.Notes.Title")
         case .settings:
             item = TabBarButtonItem(image: "gearshape", title: "TabBar.Settings.Title")
         }

@@ -6,7 +6,7 @@ enum AppTabBarUnit: Int, Identifiable, CaseIterable {
         rawValue
     }
     
-    case diary
+    case notes
     
     case settings
     

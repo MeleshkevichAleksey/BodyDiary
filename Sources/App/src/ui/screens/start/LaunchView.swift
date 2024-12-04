@@ -6,7 +6,7 @@ import FoodNotesKit
 struct LaunchView: View {
     
     @StateObject
-    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: UIService = DependencyContainer.shared.resolve()
     
     var body: some View {
         LottieView(animation: .named("LaunchAnimation"))

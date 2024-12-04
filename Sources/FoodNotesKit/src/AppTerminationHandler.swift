@@ -25,4 +25,14 @@ public class AppTerminationHandler {
         logger.log(message: logMessage, type: .error)
         fatalError(logMessage)
     }
+    
+    /**
+     App crash handler with possibility to pass error.
+     */
+    public static func execute(error: Exception,
+                               function: StaticString = #function,
+                               file: StaticString = #file,
+                               line: Int = #line) -> Never {
+        execute(message: error.description, function: function, file: file, line: line)
+    }
 }

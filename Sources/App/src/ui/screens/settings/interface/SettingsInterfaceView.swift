@@ -5,7 +5,7 @@ import FoodNotesUI
 struct SettingsInterfaceView: View {
     
     @StateObject
-    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: UIService = DependencyContainer.shared.resolve()
     
     var body: some View {
         VStack(spacing: 40) {

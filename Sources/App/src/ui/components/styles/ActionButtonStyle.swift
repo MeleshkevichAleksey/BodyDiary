@@ -5,7 +5,7 @@ import FoodNotesKit
 struct ActionButtonStyle: ButtonStyle {
     
     @StateObject
-    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: UIService = DependencyContainer.shared.resolve()
     
     @Binding
     var isSelected: Bool

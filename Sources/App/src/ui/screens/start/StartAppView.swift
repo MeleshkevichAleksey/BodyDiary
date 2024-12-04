@@ -8,7 +8,7 @@ struct StartAppScreen: View {
     private var initializeService = InitializeService()
     
     @StateObject
-    private var userService: UserService = DependencyResolver.shared.resolve()
+    private var userService: UserService = DependencyContainer.shared.resolve()
     
     @Inject
     private var appConfigurationProvider: AppConfigurationProvider

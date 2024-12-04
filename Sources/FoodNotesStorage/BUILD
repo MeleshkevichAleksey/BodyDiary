@@ -8,4 +8,7 @@ swift_library(
     ]),
     module_name = "FoodNotesStorage",
     visibility = ["//visibility:public"],
+    deps = [
+        "//Sources/FoodNotesKit:FoodNotesKit",
+    ]
 )

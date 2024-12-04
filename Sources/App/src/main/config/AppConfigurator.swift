@@ -6,6 +6,7 @@ import FoodNotesUI
  
  - Modules setup
  */
+@MainActor
 class AppConfigurator {
     
     /**
@@ -17,7 +18,10 @@ class AppConfigurator {
     }
     
     private func setupKit() {
+        let coreServices = ServicesFactory.createCoreServices()
+        DependencyContainer.shared.register(dependencies: coreServices)
+        
         let services = ServicesFactory.createServices()
-        DependencyManager.register(dependencies: services)
+        DependencyContainer.shared.register(dependencies: services)
     }
 }

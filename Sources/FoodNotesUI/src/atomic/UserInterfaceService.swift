@@ -3,7 +3,7 @@ import Combine
 /**
  Service maintaining app UI configuration.
  */
-public class FoodNotesUIService: ObservableObject {
+public class UIService: ObservableObject {
     
     @Published
     public var fonts: Fonts

@@ -8,7 +8,7 @@ import PopupView
 struct OnboardingUserDataView: View {
     
     @StateObject
-    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: UIService = DependencyContainer.shared.resolve()
     
     @Environment(\.modelContext)
     private var modelContext

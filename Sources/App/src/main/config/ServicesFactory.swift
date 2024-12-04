@@ -1,18 +1,20 @@
 import FoodNotesUI
 import FoodNotesKit
+import FoodNotesStorage
 
 /**
  App services factory.
  */
+@MainActor
 class ServicesFactory {
     
     /**
-     Creates services.
+     Creates core services.
      
      - returns: Services objects array.
      */
-    static func createServices() -> [AnyObject] {
-        let FoodNotesUIService = FoodNotesUIService()
+    static func createCoreServices() -> [AnyObject] {
+        let uiService = UIService()
         
         let userService = UserService()
         
@@ -20,11 +22,29 @@ class ServicesFactory {
         
         let configurationProvider = AppConfigurationProvider()
         
+        let storageService = StorageService()
+        
         let services: [AnyObject] = [
-            FoodNotesUIService,
+            uiService,
             userService,
             logger,
-            configurationProvider
+            configurationProvider,
+            storageService,
+        ]
+        
+        return services
+    }
+    
+    /**
+     Creates domain-specific services.
+     
+     - returns: Services objects array.
+     */
+    static func createServices() -> [AnyObject] {
+        let userStorageService = UserStorageService()
+        
+        let services: [AnyObject] = [
+            userStorageService,
         ]
         
         return services

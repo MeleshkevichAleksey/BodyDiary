@@ -1,7 +1,13 @@
 import SwiftData
 
-public class StorageService {
+/**
+ Data scheme of storage for each version.
+ */
+class StorageSchema {
     
+    /**
+     - returns: Current schema.
+     */
     public static func getCurrentSchema() -> Schema {
         Schema([
             UserEntity.self

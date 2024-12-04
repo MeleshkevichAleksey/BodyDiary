@@ -2,6 +2,14 @@ load("@rules_swift_package_manager//swiftpkg:defs.bzl", "swift_package")
 
 # Contents of swift_deps.bzl
 def swift_dependencies():
+    # version: 1.0.0
+    swift_package(
+        name = "swiftpkg_calendarview",
+        commit = "b347587ba39a023b61881158872db9d01a90a9a6",
+        dependencies_index = "@//:swift_deps_index.json",
+        remote = "https://github.com/Mijick/CalendarView.git",
+    )
+
     # version: 4.5.0
     swift_package(
         name = "swiftpkg_lottie_ios",

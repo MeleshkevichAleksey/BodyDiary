@@ -12,7 +12,7 @@ struct UserAvatarView: View {
     private var logger: Logger
     
     @StateObject
-    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: UIService = DependencyContainer.shared.resolve()
     
     @Environment(\.modelContext)
     private var modelContext

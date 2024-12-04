@@ -5,7 +5,7 @@ import FoodNotesUI
 struct OnboardingInterfaceSelectionView: View {
     
     @StateObject
-    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: UIService = DependencyContainer.shared.resolve()
     
     @Binding
     var stepCompleted: Bool
@@ -35,6 +35,6 @@ struct OnboardingInterfaceSelectionView: View {
 
 #Preview {
     OnboardingInterfaceSelectionView(stepCompleted: .constant(true))
-        .environmentObject(FoodNotesUIService())
+        .environmentObject(UIService())
         .preferredColorScheme(.dark)
 }

@@ -6,7 +6,7 @@ import FoodNotesStorage
 struct AppTabBarView: View {
     
     @StateObject
-    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: UIService = DependencyContainer.shared.resolve()
     
     @Inject
     private var appConfigurationProvider: AppConfigurationProvider
@@ -73,7 +73,7 @@ struct AppTabBarView: View {
     private func tabUnitView(for unit: AppTabBarUnit) -> some View {
         switch unit {
         case .notes:
-            NotesView()
+            NotesView(viewModel: NotesViewModel())
         case .settings:
             SettingsView()
         }

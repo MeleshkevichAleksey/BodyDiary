@@ -7,5 +7,6 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/airbnb/lottie-ios.git", from: "4.4.2"),
         .package(url: "https://github.com/exyte/PopupView", from: "3.0.0"),
+        .package(url: "https://github.com/Mijick/CalendarView.git", from: "1.0.0")
     ]
 )

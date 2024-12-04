@@ -5,7 +5,7 @@ import FoodNotesUI
 struct SectionSegueView: View {
     
     @StateObject
-    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: UIService = DependencyContainer.shared.resolve()
     
     let image: Image
     

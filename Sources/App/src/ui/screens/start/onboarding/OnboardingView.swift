@@ -5,7 +5,7 @@ import FoodNotesUI
 struct OnboardingView: View {
     
     @StateObject
-    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: UIService = DependencyContainer.shared.resolve()
     
     @StateObject
     private var viewModel: OnboardingViewModel

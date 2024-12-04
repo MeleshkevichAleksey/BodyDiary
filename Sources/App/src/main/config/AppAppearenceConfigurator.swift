@@ -9,7 +9,7 @@ import FoodNotesUI
 class AppAppearenceConfigurator {
     
     @Inject
-    private var interfaceService: FoodNotesUIService
+    private var interfaceService: UIService
     
     func configure() {
         configureTabBar()

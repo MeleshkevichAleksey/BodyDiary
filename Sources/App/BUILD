@@ -22,10 +22,11 @@ swift_library(
     srcs = glob([
         "src/**/*.swift"
     ]),
-    data = [
+    data = glob([
         "PreviewContent",
-        "res/LaunchAnimation.json"
-    ],
+        "res/LaunchAnimation.json",
+        "res/fonts/**",
+    ]),
     module_name = "App",
     visibility = ["//visibility:public"],
     deps = [
@@ -34,6 +35,7 @@ swift_library(
         "//Sources/FoodNotesUI:FoodNotesUI",
         "@swiftpkg_lottie_ios//:Sources_Lottie",
         "@swiftpkg_popupview//:Sources_PopupView",
+        "@swiftpkg_calendarview//:Sources_MijickCalendarView",
     ]
 )
 

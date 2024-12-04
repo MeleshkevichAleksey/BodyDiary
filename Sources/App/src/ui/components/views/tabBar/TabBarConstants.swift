@@ -2,5 +2,5 @@ import SwiftUI
 
 struct TabBarConstants {
     
-    static let opacity: CGFloat = 0.7
+    static let opacity: CGFloat = 1.0
 }

@@ -12,7 +12,7 @@ struct OnboardingTemplatePageView: View {
     var isButtonEnabled: Bool
     
     @StateObject
-    private var interfaceService: FoodNotesUIService = DependencyResolver.shared.resolve()
+    private var interfaceService: UIService = DependencyContainer.shared.resolve()
     
     var body: some View {
         VStack {

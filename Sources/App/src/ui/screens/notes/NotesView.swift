@@ -27,8 +27,15 @@ struct NotesView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                NotesHeaderView(noteDate: viewModel.$selectedNoteDate,
+                NotesHeaderView(noteDate: .init(get: {
+                    viewModel.selectedNoteDate
+                }, set: { date in
+                    viewModel.selectedNoteDate = date
+                }),
                                 calendarInitialDate: viewModel.storageCreatedDate)
+                .padding(.top, 16)
+                .padding(.leading, 16)
+                
                 Spacer()
             }
             .toolbar(.hidden)

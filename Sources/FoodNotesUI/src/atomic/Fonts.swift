@@ -3,6 +3,10 @@ import UIKit
 
 public struct Fonts {
     
+    public init() {
+        
+    }
+    
     public let jostTitle = Font.custom("Jost-Bold", size: 32)
     
     public let actionButtonTitle = Font.custom("PlusJakartaSans-Bold", size: 20)

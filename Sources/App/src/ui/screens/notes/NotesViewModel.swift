@@ -11,10 +11,10 @@ class NotesViewModel: ObservableObject, Identifiable {
     @Inject
     private var userStorage: UserStorageService
     
-    @State
+    @Published
     var selectedNoteDate: Date
     
-    @State
+    @Published
     var storageCreatedDate: Date
     
     init() {

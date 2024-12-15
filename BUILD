@@ -57,7 +57,7 @@ xcodeproj(
     top_level_targets = [
         top_level_target(
             "//Sources/App:App",
-            target_environments = ["simulator"],
+            target_environments = ["simulator", "device"],
         ),
     ],
 )

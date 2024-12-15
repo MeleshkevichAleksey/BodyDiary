@@ -44,12 +44,6 @@ filegroup(
     srcs = glob(["res/PreviewContent/**"]),
 )
 
-local_provisioning_profile(
-    name = "xcode_managed_profile",
-    profile_name = "iOS Team Provisioning Profile: com.meleshhhkevich.FoodNotes",
-    tags = ["manual"],
-)
-
 ios_application(
     name = "App",
     app_icons = glob(["res/Assets.xcassets/AppIcon.appiconset/**"]),
@@ -58,6 +52,7 @@ ios_application(
     entitlements = "FoodNotes.entitlements",
     executable_name = "FoodNotes",
     families = ["iphone", "ipad"],
+    provisioning_profile = ":xcode_profile",
     infoplists = [":Info.plist"],
     minimum_os_version = app_config.minimum_ios_version,
     resources = glob(
@@ -72,4 +67,16 @@ ios_application(
     deps = [
         ":app.library",
     ],
+)
+
+xcode_provisioning_profile(
+   name = "xcode_profile",
+   managed_by_xcode = True,
+   provisioning_profile = ":provisioning_profile",
+)
+
+local_provisioning_profile(
+    name = "provisioning_profile",
+    profile_name = "iOS Team Provisioning Profile: com.meleshhhkevich.FoodNotes",
+    team_id = "WD3HSGX563",
 )

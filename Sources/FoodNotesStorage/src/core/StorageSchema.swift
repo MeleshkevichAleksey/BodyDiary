@@ -10,7 +10,10 @@ class StorageSchema {
      */
     public static func getCurrentSchema() -> Schema {
         Schema([
-            UserEntity.self
+            UserEntity.self,
+            NoteEntity.self,
+            MealEntity.self,
+            MealEnergyValueEntity.self,
         ])
     }
 }

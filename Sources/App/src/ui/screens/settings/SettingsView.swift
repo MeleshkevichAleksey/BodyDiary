@@ -10,7 +10,7 @@ struct SettingsView: View {
     private var logger: Logger
     
     @StateObject
-    private var interfaceService: UIService = DependencyContainer.shared.resolve()
+    private var uiService: UIService = DependencyContainer.shared.resolve()
     
     @Environment(\.modelContext)
     private var modelContext
@@ -28,8 +28,8 @@ struct SettingsView: View {
                     UserAvatarView()
                     
                     Text("Settings.User.Greetings \(userName)")
-                        .font(interfaceService.fonts.jostHeadline4)
-                        .foregroundStyle(interfaceService.colors.textMain)
+                        .font(uiService.fonts.jostHeadline4)
+                        .foregroundStyle(uiService.colors.textMain)
                     
                     Spacer()
                 }
@@ -55,14 +55,14 @@ struct SettingsView: View {
                 }
                 .padding(.vertical, 20)
                 .padding(.leading, 20)
-                .background(interfaceService.colors.sectionBackground)
+                .background(uiService.colors.sectionBackground)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 
                 Spacer()
             }
         }
         .padding(.horizontal, 46)
-        .background(interfaceService.colors.backgroundMain)
+        .background(uiService.colors.backgroundMain)
         .onAppear(perform: {
             bindUser()
         })

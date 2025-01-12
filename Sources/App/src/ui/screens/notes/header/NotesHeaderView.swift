@@ -6,7 +6,7 @@ import MijickCalendarView
 struct NotesHeaderView: View {
     
     @Inject
-    private var interfaceService: UIService
+    private var uiService: UIService
     
     @State
     private var showCalendar = false
@@ -20,7 +20,7 @@ struct NotesHeaderView: View {
         VStack {
             HStack {
                 Image(systemName: "calendar")
-                    .foregroundStyle(interfaceService.colors.controlBackgroundAccent)
+                    .foregroundStyle(uiService.colors.controlBackgroundAccent)
                     .onTapGesture {
                         showCalendar = true
                     }
@@ -37,8 +37,8 @@ struct NotesHeaderView: View {
                     }
                 
                 Text(noteDate.formatted(date: .complete, time: .omitted))
-                    .font(interfaceService.fonts.body2semi)
-                    .foregroundStyle(interfaceService.colors.textMain)
+                    .font(uiService.fonts.jostHeadline4)
+                    .foregroundStyle(uiService.colors.textMain)
                 
                 Spacer()
             }
@@ -48,4 +48,5 @@ struct NotesHeaderView: View {
 
 #Preview {
     NotesHeaderView(noteDate: .constant(Date()), calendarInitialDate: Date())
+        .preferredColorScheme(.dark)
 }

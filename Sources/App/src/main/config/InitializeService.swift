@@ -4,9 +4,9 @@ import Foundation
 /**
  Performs app services setup.
  */
-class InitializeService: ObservableObject {
+@Observable
+class InitializeService {
     
-    @Published
     var isInitialized: Bool
     
     init() {

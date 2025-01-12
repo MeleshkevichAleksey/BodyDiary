@@ -2,7 +2,6 @@ import FoodNotesStorage
 import FoodNotesKit
 import SwiftData
 
-@MainActor
 class UserStorageService {
     
     @Inject
@@ -12,10 +11,8 @@ class UserStorageService {
     
     private var user: UserEntity?
     
-    init() {
-        let modelContainer: ModelContainer = DependencyContainer.shared.resolve(StorageService.self).getModelContainer()
-        
-        self.modelContext = modelContainer.mainContext
+    init(modelContext: ModelContext) {
+        self.modelContext = modelContext
         
         fetchUser()
     }

@@ -4,7 +4,7 @@ import FoodNotesUI
 
 struct StartAppScreen: View {
     
-    @StateObject
+    @State
     private var initializeService = InitializeService()
     
     @StateObject
@@ -43,4 +43,5 @@ struct StartAppScreen: View {
 
 #Preview {
     StartAppScreen()
+        .preferredColorScheme(.dark)
 }

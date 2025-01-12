@@ -2,12 +2,34 @@ import SwiftUI
 
 public class QueenPalette: Palette {
     
+    public var all: [Color] {
+        [
+            textAccent,
+            textMain,
+            controlMid,
+            textAccentControl,
+            backgroundMain,
+            controlBackgroundAccent,
+            controlBackgroundAccentInactive,
+            errorBackground,
+            groupColor,
+            groupControlColor,
+            groupControlInversed,
+            sectionBackground,
+            tintMain
+        ]
+    }
+    
     private static var currentBundle: Bundle {
         return Bundle(for: StandardPalette.self)
     }
     
     private static func bundleColor(_ name: String) -> Color {
         Color(name, bundle: currentBundle)
+    }
+    
+    public init() {
+        
     }
     
     public var textAccent: Color = Colors.blackPink

@@ -9,7 +9,7 @@ import FoodNotesUI
 class AppAppearenceConfigurator {
     
     @Inject
-    private var interfaceService: UIService
+    private var uiService: UIService
     
     func configure() {
         configureTabBar()
@@ -21,6 +21,6 @@ class AppAppearenceConfigurator {
     }
     
     private func configureNavigationBar() {
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: interfaceService.colors.textMain.uiColor]
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: uiService.colors.textMain.uiColor]
     }
 }

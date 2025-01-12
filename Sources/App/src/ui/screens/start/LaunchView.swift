@@ -6,13 +6,13 @@ import FoodNotesKit
 struct LaunchView: View {
     
     @StateObject
-    private var interfaceService: UIService = DependencyContainer.shared.resolve()
+    private var uiService: UIService = DependencyContainer.shared.resolve()
     
     var body: some View {
         LottieView(animation: .named("LaunchAnimation"))
             .looping()
             .configure({ lottieView in
-                let colorValueProvider = ColorValueProvider(interfaceService.colors.controlBackgroundAccent.uiColor.lottieColorValue)
+                let colorValueProvider = ColorValueProvider(uiService.colors.controlBackgroundAccent.uiColor.lottieColorValue)
                 
                 let keyPaths = [
                     "sweap 2.Shape 1.Stroke 1.Color",
@@ -26,7 +26,7 @@ struct LaunchView: View {
                     lottieView.setValueProvider(colorValueProvider, keypath: AnimationKeypath(keypath: keyPath))
                 }
             })
-            .background(interfaceService.colors.backgroundMain)
+            .background(uiService.colors.backgroundMain)
     }
 }
 

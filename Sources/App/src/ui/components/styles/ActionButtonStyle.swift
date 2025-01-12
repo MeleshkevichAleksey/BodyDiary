@@ -5,7 +5,7 @@ import FoodNotesKit
 struct ActionButtonStyle: ButtonStyle {
     
     @StateObject
-    private var interfaceService: UIService = DependencyContainer.shared.resolve()
+    private var uiService: UIService = DependencyContainer.shared.resolve()
     
     @Binding
     var isSelected: Bool
@@ -14,13 +14,13 @@ struct ActionButtonStyle: ButtonStyle {
         configuration.label
             .padding()
             .frame(maxWidth: .infinity)
-            .foregroundStyle(interfaceService.colors.textAccentControl)
+            .foregroundStyle(uiService.colors.textAccentControl)
             .background(isSelected ?
-                        interfaceService.colors.controlBackgroundAccent :
-                            interfaceService.colors.controlBackgroundAccentInactive, in: Capsule())
-            .font(interfaceService.fonts.actionButtonTitle)
+                        uiService.colors.controlBackgroundAccent :
+                            uiService.colors.controlBackgroundAccentInactive, in: Capsule())
+            .font(uiService.fonts.actionButtonTitle)
             .frame(maxWidth: .infinity)
-            .onChange(of: interfaceService.colors.palette) { oldValue, newValue in
+            .onChange(of: uiService.colors.palette) { oldValue, newValue in
                 isSelected = isSelected
             }
             .scaleEffect(configuration.isPressed ? 1.2 : 1)

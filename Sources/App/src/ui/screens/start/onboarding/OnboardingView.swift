@@ -5,7 +5,7 @@ import FoodNotesUI
 struct OnboardingView: View {
     
     @StateObject
-    private var interfaceService: UIService = DependencyContainer.shared.resolve()
+    private var uiService: UIService = DependencyContainer.shared.resolve()
     
     @StateObject
     private var viewModel: OnboardingViewModel
@@ -23,11 +23,11 @@ struct OnboardingView: View {
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Onboarding.Welcome")
-                            .font(interfaceService.fonts.jostTitle)
-                            .foregroundStyle(interfaceService.colors.textMain)
+                            .font(uiService.fonts.jostTitle)
+                            .foregroundStyle(uiService.colors.textMain)
                         Text("AppName")
-                            .font(interfaceService.fonts.jostTitle)
-                            .foregroundStyle(interfaceService.colors.textAccent)
+                            .font(uiService.fonts.jostTitle)
+                            .foregroundStyle(uiService.colors.textAccent)
                     }
                     
                     Spacer()
@@ -65,7 +65,7 @@ struct OnboardingView: View {
             }
             .padding(.horizontal, 16)
         }
-        .background(interfaceService.colors.backgroundMain)
+        .background(uiService.colors.backgroundMain)
         .ignoresSafeArea(.keyboard)
     }
 }

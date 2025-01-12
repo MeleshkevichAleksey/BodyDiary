@@ -9,6 +9,12 @@ import FoodNotesUI
 @MainActor
 class AppConfigurator {
     
+    private let servicesFactory: ServicesFactory
+    
+    init() {
+        self.servicesFactory = ServicesFactory()
+    }
+    
     /**
      Performs configuration.
      */
@@ -18,10 +24,10 @@ class AppConfigurator {
     }
     
     private func setupKit() {
-        let coreServices = ServicesFactory.createCoreServices()
+        let coreServices = servicesFactory.createCoreServices()
         DependencyContainer.shared.register(dependencies: coreServices)
         
-        let services = ServicesFactory.createServices()
+        let services = servicesFactory.createServices()
         DependencyContainer.shared.register(dependencies: services)
     }
 }

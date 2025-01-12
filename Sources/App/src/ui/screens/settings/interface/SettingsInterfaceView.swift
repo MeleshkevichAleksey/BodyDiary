@@ -5,7 +5,7 @@ import FoodNotesUI
 struct SettingsInterfaceView: View {
     
     @StateObject
-    private var interfaceService: UIService = DependencyContainer.shared.resolve()
+    private var uiService: UIService = DependencyContainer.shared.resolve()
     
     var body: some View {
         VStack(spacing: 40) {
@@ -13,8 +13,8 @@ struct SettingsInterfaceView: View {
                 .frame(height: 40)
             
             Text("Settings.Interface.Header")
-                .font(interfaceService.fonts.jostHeadline4)
-                .foregroundStyle(interfaceService.colors.textMain)
+                .font(uiService.fonts.jostHeadline4)
+                .foregroundStyle(uiService.colors.textMain)
             
             InterfaceSelectionView()
                 .navigationTitle("Settings.Interface.NavigationTitle")

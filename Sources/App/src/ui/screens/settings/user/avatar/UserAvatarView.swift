@@ -12,7 +12,7 @@ struct UserAvatarView: View {
     private var logger: Logger
     
     @StateObject
-    private var interfaceService: UIService = DependencyContainer.shared.resolve()
+    private var uiService: UIService = DependencyContainer.shared.resolve()
     
     @Environment(\.modelContext)
     private var modelContext
@@ -49,12 +49,12 @@ struct UserAvatarView: View {
                 VStack {
                     if !showTakePhotoSide {
                         Text(userName.first?.uppercased() ?? String())
-                            .font(interfaceService.fonts.headline3)
-                            .foregroundStyle(interfaceService.colors.textMain)
+                            .font(uiService.fonts.headline3)
+                            .foregroundStyle(uiService.colors.textMain)
                     }
                     else {
                         Image(systemName: "camera")
-                            .foregroundStyle(interfaceService.colors.textMain)
+                            .foregroundStyle(uiService.colors.textMain)
                     }
                 }
                 .rotation3DEffect(.degrees(showTakePhotoSide ? 180 : 0),
@@ -69,12 +69,12 @@ struct UserAvatarView: View {
         .onTapGesture {
             showPicker = true
         }
-        .background(interfaceService.colors.groupControlColor)
+        .background(uiService.colors.groupControlColor)
         .clipShape(Circle())
         .popup(isPresented: $showErrorPopup, view: {
             Text("Error saving user occurred")
-                .font(interfaceService.fonts.body1)
-                .foregroundStyle(interfaceService.colors.textAccentControl)
+                .font(uiService.fonts.body1)
+                .foregroundStyle(uiService.colors.textAccentControl)
         }, customize: {
             $0
                 .type(.toast)

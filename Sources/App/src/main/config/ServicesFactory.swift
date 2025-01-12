@@ -8,12 +8,18 @@ import FoodNotesStorage
 @MainActor
 class ServicesFactory {
     
+    private let storageService: StorageService
+    
+    init() {
+        self.storageService = StorageService()
+    }
+    
     /**
      Creates core services.
      
      - returns: Services objects array.
      */
-    static func createCoreServices() -> [AnyObject] {
+    func createCoreServices() -> [AnyObject] {
         let uiService = UIService()
         
         let userService = UserService()
@@ -21,8 +27,6 @@ class ServicesFactory {
         let logger = Logger()
         
         let configurationProvider = AppConfigurationProvider()
-        
-        let storageService = StorageService()
         
         let services: [AnyObject] = [
             uiService,
@@ -40,11 +44,14 @@ class ServicesFactory {
      
      - returns: Services objects array.
      */
-    static func createServices() -> [AnyObject] {
-        let userStorageService = UserStorageService()
+    func createServices() -> [AnyObject] {
+        let userStorageService = UserStorageService(modelContext: storageService.getModelContainer().mainContext)
+        
+        let noteRepository = NotesRepository(modelContext: storageService.getModelContainer().mainContext)
         
         let services: [AnyObject] = [
             userStorageService,
+            noteRepository
         ]
         
         return services

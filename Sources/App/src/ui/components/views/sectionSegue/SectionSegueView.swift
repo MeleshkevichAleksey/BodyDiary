@@ -5,7 +5,7 @@ import FoodNotesUI
 struct SectionSegueView: View {
     
     @StateObject
-    private var interfaceService: UIService = DependencyContainer.shared.resolve()
+    private var uiService: UIService = DependencyContainer.shared.resolve()
     
     let image: Image
     
@@ -24,11 +24,11 @@ struct SectionSegueView: View {
             image
                 .resizable()
                 .frame(width: 20, height: 20)
-                .foregroundStyle(interfaceService.colors.tintMain)
+                .foregroundStyle(uiService.colors.tintMain)
             
             Text(LocalizedStringKey(title))
-                .foregroundStyle(interfaceService.colors.textMain)
-                .font(interfaceService.fonts.body2)
+                .foregroundStyle(uiService.colors.textMain)
+                .font(uiService.fonts.body2)
                 .lineLimit(1)
         }
     }

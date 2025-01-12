@@ -6,7 +6,7 @@ import FoodNotesStorage
 struct AppTabBarView: View {
     
     @StateObject
-    private var interfaceService: UIService = DependencyContainer.shared.resolve()
+    private var uiService: UIService = DependencyContainer.shared.resolve()
     
     @Inject
     private var appConfigurationProvider: AppConfigurationProvider
@@ -40,6 +40,7 @@ struct AppTabBarView: View {
                     NavigationStack {
                         tabUnitView(for: tab)
                             .tag(tab.id)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
                     }
                 }
             }
@@ -60,13 +61,13 @@ struct AppTabBarView: View {
                 }
                 .frame(maxWidth: .infinity)
                 .frame(height: 70)
-                .background(interfaceService.colors.groupColor.opacity(TabBarConstants.opacity))
+                .background(uiService.colors.groupColor.opacity(TabBarConstants.opacity))
                 .clipShape(TabBarShape())
                 .padding(.horizontal, 30)
             }
         }
-        .tint(interfaceService.colors.textAccent)
-        .background(interfaceService.colors.backgroundMain)
+        .tint(uiService.colors.textAccent)
+        .background(uiService.colors.backgroundMain)
     }
     
     @ViewBuilder

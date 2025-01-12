@@ -5,7 +5,7 @@ import FoodNotesUI
 struct OnboardingInterfaceSelectionView: View {
     
     @StateObject
-    private var interfaceService: UIService = DependencyContainer.shared.resolve()
+    private var uiService: UIService = DependencyContainer.shared.resolve()
     
     @Binding
     var stepCompleted: Bool
@@ -14,15 +14,15 @@ struct OnboardingInterfaceSelectionView: View {
         ZStack {
             VStack {
                 Text("Onboarding.Page3.SelectionDescription")
-                    .font(interfaceService.fonts.body4)
-                    .foregroundStyle(interfaceService.colors.textMain)
+                    .font(uiService.fonts.body4)
+                    .foregroundStyle(uiService.colors.textMain)
                     .truncationMode(.middle)
                 
                 InterfaceSelectionView()
             }
             .padding(.horizontal, 30)
             .padding(.vertical, 30)
-            .background(interfaceService.colors.groupColor)
+            .background(uiService.colors.groupColor)
             .clipShape(.buttonBorder)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)

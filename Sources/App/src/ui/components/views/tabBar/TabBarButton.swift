@@ -5,7 +5,7 @@ import FoodNotesUI
 struct TabBarButton: View {
     
     @StateObject
-    private var interfaceService: UIService = DependencyContainer.shared.resolve()
+    private var uiService: UIService = DependencyContainer.shared.resolve()
     
     @Binding
     var isSelected: Bool
@@ -15,11 +15,11 @@ struct TabBarButton: View {
     var body: some View {
         VStack(spacing: 6) {
             Image(systemName: item.image)
-                .foregroundStyle(isSelected ? interfaceService.colors.textMain : interfaceService.colors.controlMid)
+                .foregroundStyle(isSelected ? uiService.colors.textMain : uiService.colors.controlMid)
             
             Text(LocalizedStringKey(item.title))
-                .font(interfaceService.fonts.body1Medium)
-                .foregroundStyle(isSelected ? interfaceService.colors.textMain : interfaceService.colors.controlMid)
+                .font(uiService.fonts.body1Medium)
+                .foregroundStyle(isSelected ? uiService.colors.textMain : uiService.colors.controlMid)
         }
     }
 }

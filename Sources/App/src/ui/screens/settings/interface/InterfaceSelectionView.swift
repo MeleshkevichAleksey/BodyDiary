@@ -5,7 +5,7 @@ import FoodNotesUI
 struct InterfaceSelectionView: View {
     
     @StateObject
-    private var interfaceService: UIService = DependencyContainer.shared.resolve()
+    private var uiService: UIService = DependencyContainer.shared.resolve()
     
     @State
     private var selectedPalette: PaletteType = .standard
@@ -18,15 +18,15 @@ struct InterfaceSelectionView: View {
                     .frame(width: 98.25, height: 207)
                 
                 Image(systemName: (selectedPalette == .standard) ? "checkmark.circle.fill" : "circle")
-                    .foregroundStyle((selectedPalette == .standard) ? interfaceService.colors.controlBackgroundAccent :
-                                        interfaceService.colors.groupControlInversed)
+                    .foregroundStyle((selectedPalette == .standard) ? uiService.colors.controlBackgroundAccent :
+                                        uiService.colors.groupControlInversed)
                 
                 Spacer()
                     .frame(height: 10)
                 
                 Text(PaletteType.standard.rawValue.capitalized)
-                    .font(interfaceService.fonts.body2)
-                    .foregroundStyle(interfaceService.colors.textMain)
+                    .font(uiService.fonts.body2)
+                    .foregroundStyle(uiService.colors.textMain)
             }
             .onTapGesture {
                 selectedPalette = .standard
@@ -41,25 +41,25 @@ struct InterfaceSelectionView: View {
                     .frame(width: 98.25, height: 207)
                 
                 Image(systemName: (selectedPalette == .queen) ? "checkmark.circle.fill" : "circle")
-                    .foregroundStyle((selectedPalette == .queen) ? interfaceService.colors.controlBackgroundAccent :
-                                        interfaceService.colors.groupControlInversed)
+                    .foregroundStyle((selectedPalette == .queen) ? uiService.colors.controlBackgroundAccent :
+                                        uiService.colors.groupControlInversed)
                 
                 Spacer()
                     .frame(height: 10)
                 
                 Text(PaletteType.queen.rawValue.capitalized)
-                    .font(interfaceService.fonts.body2)
-                    .foregroundStyle(interfaceService.colors.textMain)
+                    .font(uiService.fonts.body2)
+                    .foregroundStyle(uiService.colors.textMain)
             }
             .onTapGesture {
                 selectedPalette = .queen
             }
         }
         .onAppear(perform: {
-            selectedPalette = interfaceService.colors.palette
+            selectedPalette = uiService.colors.palette
         })
         .onChange(of: selectedPalette, { oldValue, newValue in
-            interfaceService.colors.changePalette(type: newValue)
+            uiService.colors.changePalette(type: newValue)
         })
     }
 }

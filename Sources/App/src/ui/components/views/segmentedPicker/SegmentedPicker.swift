@@ -5,7 +5,7 @@ import FoodNotesKit
 struct SegmentedPicker<Element: Hashable>: View {
     
     @StateObject
-    private var interfaceService: UIService = DependencyContainer.shared.resolve()
+    private var uiService: UIService = DependencyContainer.shared.resolve()
     
     @Binding
     private var selected: Element
@@ -22,7 +22,7 @@ struct SegmentedPicker<Element: Hashable>: View {
         ZStack(alignment: .center) {
             GeometryReader { geo in
                 RoundedRectangle(cornerRadius: 6.0)
-                    .foregroundColor(interfaceService.colors.controlBackgroundAccent)
+                    .foregroundColor(uiService.colors.controlBackgroundAccent)
                     .cornerRadius(6.0)
                     .padding(4)
                     .frame(width: geo.size.width / CGFloat(data.count))
@@ -37,12 +37,12 @@ struct SegmentedPicker<Element: Hashable>: View {
                 ForEach(data, id: \.self) { pickerItem in
                     HStack(spacing: 6) {
                         let color = selected == pickerItem.element ?
-                        interfaceService.colors.textAccentControl :
-                        interfaceService.colors.textMain
+                        uiService.colors.textAccentControl :
+                        uiService.colors.textMain
                         
                         Text(pickerItem.title)
                             .foregroundStyle(color)
-                            .font(interfaceService.fonts.body1)
+                            .font(uiService.fonts.body1)
                     }
                     .font(.system(size: 16, weight: .regular))
                     .frame(maxWidth: .infinity)
@@ -57,7 +57,7 @@ struct SegmentedPicker<Element: Hashable>: View {
         }
         .background(
             RoundedRectangle(cornerRadius: 6.0)
-                .fill(interfaceService.colors.groupControlColor.opacity(0.05))
+                .fill(uiService.colors.groupControlColor.opacity(0.05))
         )
     }
 }

@@ -8,7 +8,7 @@ import PopupView
 struct OnboardingUserDataView: View {
     
     @StateObject
-    private var interfaceService: UIService = DependencyContainer.shared.resolve()
+    private var uiService: UIService = DependencyContainer.shared.resolve()
     
     @Environment(\.modelContext)
     private var modelContext
@@ -36,8 +36,8 @@ struct OnboardingUserDataView: View {
             VStack(alignment: .leading, spacing: 30) {
                 VStack(alignment: .leading) {
                     Text("Onboarding.Page2.NameDescription")
-                        .font(interfaceService.fonts.body4)
-                        .foregroundStyle(interfaceService.colors.textMain)
+                        .font(uiService.fonts.body4)
+                        .foregroundStyle(uiService.colors.textMain)
                         .truncationMode(.tail)
                     
                     TextField("Onboarding.Page2.NamePlaceholder", text: .init(get: {
@@ -53,8 +53,8 @@ struct OnboardingUserDataView: View {
                 
                 VStack(alignment: .leading) {
                     Text("Onboarding.Page2.GenderDesciption")
-                        .font(interfaceService.fonts.body4)
-                        .foregroundStyle(interfaceService.colors.textMain)
+                        .font(uiService.fonts.body4)
+                        .foregroundStyle(uiService.colors.textMain)
                         .truncationMode(.tail)
                 }
                 
@@ -63,7 +63,7 @@ struct OnboardingUserDataView: View {
             }
             .padding(.horizontal, 30)
             .padding(.vertical, 30)
-            .background(interfaceService.colors.groupColor)
+            .background(uiService.colors.groupColor)
             .clipShape(.buttonBorder)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
@@ -72,8 +72,8 @@ struct OnboardingUserDataView: View {
         }
         .popup(isPresented: $showErrorPopup, view: {
             Text("Error saving user occurred")
-                .font(interfaceService.fonts.body1)
-                .foregroundStyle(interfaceService.colors.textAccentControl)
+                .font(uiService.fonts.body1)
+                .foregroundStyle(uiService.colors.textAccentControl)
         }, customize: {
             $0
                 .type(.toast)

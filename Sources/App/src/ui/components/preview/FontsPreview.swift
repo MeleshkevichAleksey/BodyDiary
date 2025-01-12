@@ -6,31 +6,31 @@ import SwiftUI
     VStack {
         let fonts = Fonts()
         
-        Text("Preview font")
+        Text("jostTitle")
             .font(fonts.jostTitle)
         
-        Text("Preview font")
+        Text("actionButtonTitle")
             .font(fonts.actionButtonTitle)
         
-        Text("Preview font")
+        Text("body1")
             .font(fonts.body1)
         
-        Text("Preview font")
+        Text("body1Medium")
             .font(fonts.body1Medium)
         
-        Text("Preview font")
+        Text("body2")
             .font(fonts.body2)
         
-        Text("Preview font")
+        Text("body2semi")
             .font(fonts.body2semi)
         
-        Text("Preview font")
+        Text("body4")
             .font(fonts.body4)
         
-        Text("Preview font")
+        Text("headline3")
             .font(fonts.headline3)
         
-        Text("Preview font")
+        Text("jostHeadline4")
             .font(fonts.jostHeadline4)
     }
 }

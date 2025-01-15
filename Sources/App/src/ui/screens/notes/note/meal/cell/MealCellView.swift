@@ -16,14 +16,27 @@ struct MealCellView: View {
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 5)
-                .stroke(uiService.colors.tintMain, style: StrokeStyle(lineWidth: 2, lineJoin: .round, dash: [20, 10]))
+            if viewModel.isEmptyData {
+                RoundedRectangle(cornerRadius: 5)
+                    .stroke(uiService.colors.tintMain, style: StrokeStyle(lineWidth: 2, lineJoin: .round, dash: [20, 10]))
+            }
+            
             VStack {
                 if viewModel.isEmptyData {
                     Image(systemName: "plus")
                         .resizable(resizingMode: .tile)
                         .frame(width: 20, height: 20)
                         .foregroundStyle(uiService.colors.tintMain)
+                }
+                else {
+                    ZStack {
+                        if let imageData = viewModel.meal.image,
+                           let uiImage = UIImage(data: imageData) {
+                            Image(uiImage: uiImage)
+                                .resizable()
+                        }
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
                 }
             }
             .onTapGesture {

@@ -29,6 +29,11 @@ struct EditMealView: View {
             }
             .padding(.horizontal, 26)
             
+            CameraView(viewModel: CameraViewModel(photoCompletion: { photoData in
+                print("DID MADE PHOTO")
+                viewModel.meal.image = photoData
+            }))
+            
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)

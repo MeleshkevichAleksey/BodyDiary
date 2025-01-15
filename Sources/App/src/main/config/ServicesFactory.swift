@@ -28,12 +28,15 @@ class ServicesFactory {
         
         let configurationProvider = AppConfigurationProvider()
         
+        let cameraService = CameraService()
+        
         let services: [AnyObject] = [
             uiService,
             userService,
             logger,
             configurationProvider,
             storageService,
+            cameraService
         ]
         
         return services

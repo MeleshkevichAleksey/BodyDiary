@@ -45,3 +45,6 @@
 
 "DailyNote.MainMeals" = "Main";
 "DailyNote.Snacks" = "Snacks";
+
+/* Edit meal */
+"EditMeal.CameraAccessDenied" = "No camera access, check settings";
